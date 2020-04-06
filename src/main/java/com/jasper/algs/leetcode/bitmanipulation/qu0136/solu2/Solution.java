@@ -1,0 +1,21 @@
+package com.jasper.algs.leetcode.bitmanipulation.qu0136.solu2;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * HashMap计数
+ */
+public class Solution {
+
+	public int singleNumber(int[] nums) {
+		Map<Integer,Integer> map = new HashMap<Integer, Integer>();
+		for (int num : nums)
+			map.put(num, map.getOrDefault(num, 0)+1);
+		
+		for (int key : map.keySet())
+			if(map.get(key)==1) return key;
+		
+		return -1;
+    }
+}
