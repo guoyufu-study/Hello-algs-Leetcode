@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.hashmap.qu0003.solu2;
+package com.jasper.algs.leetcode.twopointers.qu0003.solu2;
 
 import java.util.HashSet;
 import java.util.Set;

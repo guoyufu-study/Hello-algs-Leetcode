@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.stack.qu0042.solu3;
+package com.jasper.algs.leetcode.twopointers.qu0042.solu3;
 
 import java.util.Stack;
 
