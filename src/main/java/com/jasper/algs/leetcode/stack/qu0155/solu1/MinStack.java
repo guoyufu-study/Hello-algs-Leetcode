@@ -1,39 +1,42 @@
-package com.jasper.algs.leetcode.stack.qu0155;
+package com.jasper.algs.leetcode.stack.qu0155.solu1;
 
 import java.util.Stack;
 
+/**
+ * 两个栈，数据栈，辅助栈（存每次最小值）
+ */
 class MinStack {
 	
-	private Stack<Integer> minStack;
-	private Stack<Integer> orginStack;
+	private Stack<Integer> helper;
+	private Stack<Integer> data;
 
     /** 初始化数据结构 */
     public MinStack() {
-    	minStack = new Stack<Integer>();
-    	orginStack = new Stack<Integer>();
+    	helper = new Stack<Integer>();
+    	data = new Stack<Integer>();
     }
     
     public void push(int x) {
-    	if(orginStack.isEmpty()) {
-    		orginStack.push(x);
-    		minStack.push(x);
+    	if(data.isEmpty()) {
+    		data.push(x);
+    		helper.push(x);
     		return ;
     	}
-    	orginStack.push(x);
-    	minStack.push(Math.min(x, minStack.peek()));
+    	data.push(x);
+    	helper.push(Math.min(x, helper.peek()));
     }
     
     public void pop() {
-    	orginStack.pop();
-    	minStack.pop();
+    	data.pop();
+    	helper.pop();
     }
     
     public int top() {
-    	return orginStack.peek();
+    	return data.peek();
     }
     
     public int getMin() {
-    	return minStack.peek();
+    	return helper.peek();
     }
 }
 
