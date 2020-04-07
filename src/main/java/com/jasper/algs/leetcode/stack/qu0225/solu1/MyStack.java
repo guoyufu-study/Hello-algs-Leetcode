@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.stack.qu0225;
+package com.jasper.algs.leetcode.stack.qu0225.solu1;
 
 import java.util.LinkedList;
 import java.util.Queue;
