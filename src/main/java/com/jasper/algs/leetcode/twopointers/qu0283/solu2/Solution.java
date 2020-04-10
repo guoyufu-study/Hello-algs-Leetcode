@@ -6,20 +6,20 @@ package com.jasper.algs.leetcode.twopointers.qu0283.solu2;
 public class Solution {
 
 	public void moveZeroes(int[] nums) {
-		int i = 0;
-		for (; i < nums.length; i++) {//前段不为0的值不动。
-			if(nums[i]==0) break;
+		int right = 0;//右指针
+		for (; right < nums.length; right++) {//前段非0值不动。
+			if(nums[right]==0) break;
 		}
 
-		int curr=i;
-		for (; i < nums.length; i++) {//非0值前移
-			if(nums[i]!=0) {
-				nums[curr]=nums[i];
-				curr++;
-			}
+		int left=right;//左指针
+		for (; right < nums.length; right++) {//非0值前移
+			if(nums[right]!=0) 
+				nums[left++]=nums[right];
 		}
-		for (; curr < nums.length; curr++) {//剩余位置补0
-			nums[curr]=0;
+		
+		// 补零值
+		while(left < nums.length) {
+			nums[left++]=0;//剩余位置补0
 		}
     }
 }

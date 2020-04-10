@@ -6,15 +6,16 @@ package com.jasper.algs.leetcode.twopointers.qu0283.solu1;
 public class Solution {
 
 	public void moveZeroes(int[] nums) {
-		int curr=0;
-		for (int num : nums) {
-			if(num!=0) {
-				nums[curr]=num;
-				curr++;
-			}
+		
+		// 移动非零
+		int left=0;
+		for (int i = 0; i < nums.length; i++) {
+			if(nums[i]!=0) 
+				nums[left++] = nums[i];
 		}
 		
-		for (int i = curr; i < nums.length; i++) {
+		// 置零
+		for (int i = left; i < nums.length; i++) {
 			nums[i]=0;
 		}
     }
