@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0026;
+package com.jasper.algs.leetcode.twopointers.qu0026;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -13,7 +13,7 @@ class SolutionTest {
 	@ParameterizedTest
 	@MethodSource("data")
 	void testRemoveDuplicates(int[] nums, int[] expected) {
-		int actual = new com.jasper.algs.leetcode.array.qu0026.solu1.Solution().removeDuplicates(nums);
+		int actual = new com.jasper.algs.leetcode.twopointers.qu0026.solu1.Solution().removeDuplicates(nums);
 		
 		assertThat(actual).isEqualTo(expected.length);
 	}
