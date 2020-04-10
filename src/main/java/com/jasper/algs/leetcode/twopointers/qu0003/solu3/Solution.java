@@ -11,17 +11,23 @@ import java.util.Map;
 public class Solution {
 
 	public int lengthOfLongestSubstring(String s) {
-		Map<Character,Integer> map = new HashMap<>();//字典
-		int ans=0, i=0, j=0;// answer、窗口左边界、窗口右边界
-		while(j<s.length()) {
-			// 重复
-			if(map.containsKey(s.charAt(j))) {
-				i = Math.max(map.get(s.charAt(j)), i);//更新左边界
+		int ans = 0, // 答案
+			left = 0, // 窗口左边界（含）
+			right = 0;// 窗口右边界（不含）
+
+		// 字典：记录读过的所有字符，及其最新索引位置
+		Map<Character, Integer> map = new HashMap<>();
+		while (right < s.length()) {
+			// 读过
+			if (map.containsKey(s.charAt(right))) {
+				left = Math.max(map.get(s.charAt(right)), left);// 尝试更新左边界
 			}
-			// 不论是否重复
-			map.put(s.charAt(j), ++j);//入字典，更新右边界
-			ans = Math.max(ans, j-i);//更新最大长度
+			
+			++right;// 更新右边界
+			map.put(s.charAt(right), right);//更新字典（或入字典）
+			ans = Math.max(ans, right - left);// 更新最大长度
 		}
+		
 		return ans;
 	}
 }
