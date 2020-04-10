@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0015;
+package com.jasper.algs.leetcode.twopointers.qu0015;
 
 
 import static org.junit.jupiter.params.provider.Arguments.arguments;
@@ -25,7 +25,7 @@ public class SolutionTest {
 	@ParameterizedTest
 	@MethodSource("data")
 	public void testThreeSum1(int[] input, int[][] expected) {//暴力求解
-		List<List<Integer>> threeSum = new com.jasper.algs.leetcode.array.qu0015.solu1.Solution()
+		List<List<Integer>> threeSum = new com.jasper.algs.leetcode.twopointers.qu0015.solu1.Solution()
 				.threeSum(input);
 		System.out.println(threeSum);
 	}
@@ -33,7 +33,7 @@ public class SolutionTest {
 	@ParameterizedTest
 	@MethodSource("data")
 	public void testThreeSum2(int[] input, int[][] expected) {//暴力求解
-		List<List<Integer>> threeSum = new com.jasper.algs.leetcode.array.qu0015.solu3.Solution()
+		List<List<Integer>> threeSum = new com.jasper.algs.leetcode.twopointers.qu0015.solu3.Solution()
 				.threeSum(input);
 		System.out.println(threeSum);
 	}

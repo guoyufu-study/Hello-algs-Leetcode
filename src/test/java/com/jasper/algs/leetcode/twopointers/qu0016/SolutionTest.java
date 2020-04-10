@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0016;
+package com.jasper.algs.leetcode.twopointers.qu0016;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
@@ -14,21 +14,21 @@ class SolutionTest {
 	@ParameterizedTest
 	@MethodSource("data")
 	void testThreeSumClosest1(int[] nums, int target, int expected) {
-		int actual = new com.jasper.algs.leetcode.array.qu0016.solu1.Solution().threeSumClosest(nums, target);
+		int actual = new com.jasper.algs.leetcode.twopointers.qu0016.solu1.Solution().threeSumClosest(nums, target);
 		assertThat(actual).isEqualTo(expected);
 	}
 	
 	@ParameterizedTest
 	@MethodSource("data")
 	void testThreeSumClosest2(int[] nums, int target, int expected) {
-		int actual = new com.jasper.algs.leetcode.array.qu0016.solu2.Solution().threeSumClosest(nums, target);
+		int actual = new com.jasper.algs.leetcode.twopointers.qu0016.solu2.Solution().threeSumClosest(nums, target);
 		assertThat(actual).isEqualTo(expected);
 	}
 	
 	@ParameterizedTest
 	@MethodSource("data")
 	void testThreeSumClosest3(int[] nums, int target, int expected) {
-		int actual = new com.jasper.algs.leetcode.array.qu0016.solu3.Solution().threeSumClosest(nums, target);
+		int actual = new com.jasper.algs.leetcode.twopointers.qu0016.solu3.Solution().threeSumClosest(nums, target);
 		assertThat(actual).isEqualTo(expected);
 	}
 
