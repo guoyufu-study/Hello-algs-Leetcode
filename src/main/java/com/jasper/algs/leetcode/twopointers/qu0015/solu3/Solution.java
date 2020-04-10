@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0015.solu3;
+package com.jasper.algs.leetcode.twopointers.qu0015.solu3;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,12 +13,13 @@ public class Solution {
 		List<List<Integer>> ans = new ArrayList<List<Integer>>();//答案
 		
 		int len = nums.length;
-		if(nums == null || len < 3) return ans;//特判
+		if(nums == null || len < 3) return ans;//无解
 		
 		Arrays.parallelSort(nums);//排序
+		if(nums[0]>0 || nums[len-1]<0) return ans;// 整个数组同符号，无解
 		
 		for (int i = 0; i < len; i++) {//遍历
-			if(nums[i]>0) return ans;//如果当前数字大于0，则三数之和一定大于0，所以结束循环
+			if(nums[i]>0) return ans;//同号，无解，结束
 			if(i>0 && nums[i]==nums[i-1]) continue;//去重
 			
 			int L=i+1;//左右指针
@@ -31,6 +32,7 @@ public class Solution {
 				}
 				if(sum>0) {//大了，右指针后退
 					R--;
+					if(nums[R]<0) break;//同号，无解，结束本次
 					continue;
 				}
 				//相等
