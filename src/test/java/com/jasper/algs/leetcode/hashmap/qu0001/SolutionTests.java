@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0001;
+package com.jasper.algs.leetcode.hashmap.qu0001;
 
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
@@ -15,21 +15,21 @@ public class SolutionTests {
 	@ParameterizedTest
 	@MethodSource("twoSumProvider")
 	public void testTwoSum1(int[] nums, int target, int[] expecteds) {
-		int[] actuals = new com.jasper.algs.leetcode.array.qu0001.solu1.Solution().twoSum(nums, target);
+		int[] actuals = new com.jasper.algs.leetcode.hashmap.qu0001.solu1.Solution().twoSum(nums, target);
 		assertArrayEquals(expecteds, actuals);
 	}
 	
 	@ParameterizedTest
 	@MethodSource("twoSumProvider")
 	public void testTwoSum2(int[] nums, int target, int[] expecteds) {
-		int[] actuals = new com.jasper.algs.leetcode.array.qu0001.solu3.Solution().twoSum(nums, target);
+		int[] actuals = new com.jasper.algs.leetcode.hashmap.qu0001.solu2.Solution().twoSum(nums, target);
 		assertArrayEquals(expecteds, actuals);
 	}
 	
 	@ParameterizedTest
 	@MethodSource("twoSumProvider")
 	public void testTwoSum3(int[] nums, int target, int[] expecteds) {
-		int[] actuals = new com.jasper.algs.leetcode.array.qu0001.solu4.Solution().twoSum(nums, target);
+		int[] actuals = new com.jasper.algs.leetcode.hashmap.qu0001.solu3.Solution().twoSum(nums, target);
 		assertArrayEquals(expecteds, actuals);
 	}
 	
