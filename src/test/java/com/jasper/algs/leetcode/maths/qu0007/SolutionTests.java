@@ -35,6 +35,14 @@ public class SolutionTests {
 		assertThat(rev).isEqualTo(expected);
 	}
 	
+	@ParameterizedTest
+	@MethodSource("data")
+	public void testReverseInteger4(int x, int expected) {//边界值处理
+		int rev = new com.jasper.algs.leetcode.maths.qu0007.solu4.Solution()
+				.reverse(x);
+		assertThat(rev).isEqualTo(expected);
+	}
+	
 	
 	public static Stream<Arguments> data() {
 		return Stream.of(
