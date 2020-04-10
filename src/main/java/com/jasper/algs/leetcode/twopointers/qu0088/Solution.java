@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0088;
+package com.jasper.algs.leetcode.twopointers.qu0088;
 
 /**
  * 双指针：从后往前
