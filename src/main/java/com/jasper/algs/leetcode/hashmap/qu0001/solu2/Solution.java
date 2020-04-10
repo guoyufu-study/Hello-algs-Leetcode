@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0001.solu3;
+package com.jasper.algs.leetcode.hashmap.qu0001.solu2;
 
 import java.util.HashMap;
 import java.util.Map;
