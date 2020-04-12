@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.maths.qu0013.solu2;
+package com.jasper.algs.leetcode.greedy.qu0013.solu2;
 
 /**
  * 替代HashMap

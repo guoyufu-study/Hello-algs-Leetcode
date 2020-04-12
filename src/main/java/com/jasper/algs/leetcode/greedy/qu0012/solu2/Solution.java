@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.maths.qu0012.solu2;
+package com.jasper.algs.leetcode.greedy.qu0012.solu2;
 
 class Solution {
 

@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.maths.qu0013.solu1;
+package com.jasper.algs.leetcode.greedy.qu0013.solu1;
 
 import java.util.HashMap;
 import java.util.Map;
