@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.maths.qu0002.solu0;
+package com.jasper.algs.leetcode.maths.qu0002.solu1;
 
 import com.jasper.algs.leetcode.maths.qu0002.ListNode;
 

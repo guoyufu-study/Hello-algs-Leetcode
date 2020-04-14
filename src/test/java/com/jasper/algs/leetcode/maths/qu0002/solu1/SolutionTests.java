@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.maths.qu0002.solu0;
+package com.jasper.algs.leetcode.maths.qu0002.solu1;
 
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
@@ -16,7 +16,7 @@ public class SolutionTests {
 	@ParameterizedTest
 	@MethodSource("createListNodes")
 	public void testAddTwoNumbers0(ListNode l1, ListNode l2) {
-		ListNode result = new com.jasper.algs.leetcode.maths.qu0002.solu0.Solution().addTwoNumbers(l1, l2);
+		ListNode result = new com.jasper.algs.leetcode.maths.qu0002.solu1.Solution().addTwoNumbers(l1, l2);
 		
 		print(l1, l2, result);
 	}
