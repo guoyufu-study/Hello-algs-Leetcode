@@ -7,13 +7,16 @@ public class Solution {
 
 	public int[] singleNumber(int[] nums) {
 		int bitmask=0;
-		for (int num : nums) bitmask ^= num;//异或x^y
 		
-		int diff = bitmask & (-bitmask);//找xy不同：位中最右边1
+		//求x^y：异或，消除出现偶数次的数据，保留出现奇数次的数据
+		for (int num : nums) bitmask ^= num;
+		
+		//找xy不同：保留位中最右边 1
+		int diff = bitmask & (-bitmask);
 		
 		int x=0;
 		for (int num : nums)
-			if((num & diff) != 0) x ^= num;//求x
+			if((num & diff) != 0) x ^= num;//求x：排除y进行异或，求出x
 		
 		return new int[] {x, bitmask ^ x};//求y
 		

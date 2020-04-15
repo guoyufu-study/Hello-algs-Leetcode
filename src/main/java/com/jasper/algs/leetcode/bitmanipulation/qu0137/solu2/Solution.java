@@ -3,6 +3,9 @@ package com.jasper.algs.leetcode.bitmanipulation.qu0137.solu2;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 辅助字典：一、计数
+ */
 public class Solution {
 
 	public int singleNumber(int[] nums) {

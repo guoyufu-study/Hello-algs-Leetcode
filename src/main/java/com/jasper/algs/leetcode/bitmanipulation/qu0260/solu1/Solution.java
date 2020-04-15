@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * HashMap计数
+ * 2. 辅助字典
+ * <p>
+ * 一：计数
  */
 public class Solution {
 

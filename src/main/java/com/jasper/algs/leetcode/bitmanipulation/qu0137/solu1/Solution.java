@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * HashSet 求和
+ * 求和相减 + 辅助HashSet
  */
 public class Solution {
 

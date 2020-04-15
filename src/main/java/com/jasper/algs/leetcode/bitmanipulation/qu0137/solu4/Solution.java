@@ -1,5 +1,11 @@
 package com.jasper.algs.leetcode.bitmanipulation.qu0137.solu4;
 
+
+/**
+ * 3. 位运算
+ * <p>
+ * 一：统计每个位上出现1的次数取模
+ */
 public class Solution {
 
 	public int singleNumber(int[] nums) {
