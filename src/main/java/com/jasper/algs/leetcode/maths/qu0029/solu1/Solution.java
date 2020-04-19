@@ -13,7 +13,7 @@ class Solution {
     	int ans = 0;
     	
     	// 负数转正
-    	boolean positive = true;
+    	boolean positive = true;// 结果正负号
     	if(dividend<0)  {
     		if(dividend==Integer.MIN_VALUE) {//被除数
     			dividend += divisor>0?divisor:-divisor;
@@ -28,10 +28,10 @@ class Solution {
     	}
     	
     	// 正整数相除
-    	// 位运算+泰勒展开
+    	// 位运算+泰勒展式
     	while(divisor <= dividend) {
     		int n = 0;
-        	while(divisor<<n <= dividend>>1) {
+        	while(divisor<<n <= dividend>>1) { // 为确保(divisor<<n)不溢出，使其与(dividend>>1)比较
         		n++;
         	}
         	dividend -= divisor<<n;
