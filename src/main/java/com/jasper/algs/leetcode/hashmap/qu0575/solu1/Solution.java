@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.hashmap.qu0575;
+package com.jasper.algs.leetcode.hashmap.qu0575.solu1;
 
 import java.util.stream.IntStream;
 
