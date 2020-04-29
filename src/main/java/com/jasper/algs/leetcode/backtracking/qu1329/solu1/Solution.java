@@ -12,7 +12,7 @@ class Solution {
     public int[][] diagonalSort(int[][] mat) {
     	// 边界处理
     	if(mat==null || mat.length==0)
-    		return new int[0][0];
+    		return mat;
     	
     	// 行列
     	int rows = mat.length;
