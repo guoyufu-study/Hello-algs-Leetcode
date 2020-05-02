@@ -3,7 +3,7 @@ package com.jasper.algs.leetcode.dynamicprogramming.qu0121.solu2;
 /**
  * 0121.买卖股票的最佳时机
  * 
- * <p>一维DP
+ * <p>一维DP，当天卖出，找出此前最小值（顺序）
  */
 class Solution {
     public int maxProfit(int[] prices) {
