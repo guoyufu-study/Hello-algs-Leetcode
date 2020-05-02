@@ -10,7 +10,7 @@ class Solution {
 
     public int maxProfit(int[] prices) {
         int len = prices.length;
-        if (len == 1) return 0;
+        if (len == 0) return 0;
         
         ans = 0;
         

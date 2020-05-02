@@ -6,7 +6,7 @@ package com.jasper.algs.leetcode.dynamicprogramming.qu0122.solu3;
 class Solution {
     public int maxProfit(int[] prices) {
     	int len = prices.length;
-        if (len == 1 ) return 0;
+        if (len == 0 ) return 0;
 
         // cash：持有现金
         // hold：持有股票
@@ -18,8 +18,8 @@ class Solution {
         int preCash = cash;
         int preHold = hold;
         for (int i = 1; i < len; i++) {
-            cash = Math.max(preCash, preHold + prices[i]);
-            hold = Math.max(preHold, preCash - prices[i]);
+            cash = Math.max(preCash, preHold + prices[i]);//卖出股票
+            hold = Math.max(preHold, preCash - prices[i]);//买入股票
 
             preCash = cash;
             preHold = hold;
