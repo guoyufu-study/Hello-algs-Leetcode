@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0084.solu2;
+package com.jasper.algs.leetcode.dynamicprogramming.qu0084.solu2;
 
 
 /**

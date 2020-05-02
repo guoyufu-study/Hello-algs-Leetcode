@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0084.solu5;
+package com.jasper.algs.leetcode.dynamicprogramming.qu0084.solu5;
 
 /**
  * 0084. 柱状图中最大的矩形
