@@ -1,7 +1,9 @@
-package com.jasper.algs.leetcode.dynamicprogramming.qu0121.solu3;
+package com.jasper.algs.leetcode.dynamicprogramming.qu0121.solu2;
 
 /**
- * 一次遍历
+ * 0121.买卖股票的最佳时机
+ * 
+ * <p>一维DP
  */
 class Solution {
     public int maxProfit(int[] prices) {
