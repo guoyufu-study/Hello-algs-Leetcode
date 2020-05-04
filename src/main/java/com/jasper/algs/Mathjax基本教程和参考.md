@@ -30,3 +30,8 @@ n/2,  & \text{if $n$ is even} \\\\
 \end{cases}
 $$
 
+## 取整
+
+向下取整 \\(\lfloor x \rfloor\\)
+
+向上取整 \\(\lceil x \rceil\\)
