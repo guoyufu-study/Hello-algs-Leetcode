@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.sorting.qu0056.solu2;
+package com.jasper.algs.leetcode.interval.qu0056.solu2;
 
 import java.util.ArrayList;
 import java.util.Arrays;

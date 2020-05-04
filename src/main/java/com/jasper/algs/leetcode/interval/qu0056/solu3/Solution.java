@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.sorting.qu0056.solu3;
+package com.jasper.algs.leetcode.interval.qu0056.solu3;
 
 /**
  * 0056. 合并区间
