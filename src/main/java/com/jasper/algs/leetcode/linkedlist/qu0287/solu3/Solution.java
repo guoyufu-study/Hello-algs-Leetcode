@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.twopointers.qu0287.solu3;
+package com.jasper.algs.leetcode.linkedlist.qu0287.solu3;
 
 /**
  * 快慢指针

@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.twopointers.qu0287.solu2;
+package com.jasper.algs.leetcode.linkedlist.qu0287.solu2;
 
 /**
  * 位统计

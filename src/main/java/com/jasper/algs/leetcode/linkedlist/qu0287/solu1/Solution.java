@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.twopointers.qu0287.solu1;
+package com.jasper.algs.leetcode.linkedlist.qu0287.solu1;
 
 
 /**
@@ -6,9 +6,9 @@ package com.jasper.algs.leetcode.twopointers.qu0287.solu1;
  */
 class Solution {
     public int findDuplicate(int[] nums) {
-    	int n = nums.length;// n个抽屉，n+1个苹果
+    	int n = nums.length-1;// n个抽屉，n+1个苹果
     	
-    	return find(nums, 1, n-1);
+    	return find(nums, 1, n);
     }
     
     
@@ -23,11 +23,10 @@ class Solution {
         		count++;
 		}
     	
-    	if(count>mid-left+1) {
+    	if(count>mid-left+1) // 闭区间
     		return find(nums, left, mid);
-    	} else {
-    		return find(nums, mid+1, right);
-    	}
+    	
+    	return find(nums, mid+1, right);
     }
     
     
