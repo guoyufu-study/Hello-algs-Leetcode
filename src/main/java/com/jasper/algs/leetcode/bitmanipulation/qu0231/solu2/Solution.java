@@ -8,9 +8,7 @@ package com.jasper.algs.leetcode.bitmanipulation.qu0231.solu2;
  */
 class Solution {
     public boolean isPowerOfTwo(int n) {
-    	if(n > 0 && (n & -n) == n)
-    		return true;
     	
-    	return false;
+    	return n > 0 && (n & -n) == n;
     }
 }
