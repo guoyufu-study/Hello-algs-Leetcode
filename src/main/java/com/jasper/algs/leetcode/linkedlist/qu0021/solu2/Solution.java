@@ -1,12 +1,11 @@
-package com.jasper.algs.leetcode.linkedlist.qu0021;
+package com.jasper.algs.leetcode.linkedlist.qu0021.solu2;
+
+import com.jasper.algs.leetcode.linkedlist.ListNode;
 
 /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
+ * 0021. 合并两个有序链表
+ * 
+ * <p>迭代方案
  */
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
