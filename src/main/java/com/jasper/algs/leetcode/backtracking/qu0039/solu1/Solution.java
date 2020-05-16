@@ -47,10 +47,11 @@ class Solution {
 		// 路径点非递减，去重
 		for (int i = prev; i < N; i++) { 
 			// 在数组有序的前提下，剪枝提速
-			if(target - candidates[i]<0) {
-				break;
-			}
+			if(target - candidates[i]<0) break;
+			
+			// 记录路径
 			path.add(candidates[i]);
+			// 选择下一个路径点
 			dfs(candidates, N, target-candidates[i], i, path, ans);
 			// 回溯
 			path.removeLast();
