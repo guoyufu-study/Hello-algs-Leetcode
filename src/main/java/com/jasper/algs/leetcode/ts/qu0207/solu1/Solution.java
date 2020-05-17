@@ -20,11 +20,13 @@ class Solution {
 			adjacency.add(new ArrayList<>());
 		// 构造入度表
 		int[] indegrees = new int[numCourses];
+		
 		// 填充入度表和邻接表
 		for (int[] cp : prerequisites) {
 			indegrees[cp[0]]++;
 			adjacency.get(cp[1]).add(cp[0]);
 		}
+		
 		// 所有入度为0的课程，作为起始候选项
 		Queue<Integer> queue = new LinkedList<>();
 		for (int i = 0; i < numCourses; i++)
