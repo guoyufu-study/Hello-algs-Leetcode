@@ -6,7 +6,8 @@
 
 [0653.两数之和 IV - 输入 BST](leetcode/twopointers/0653.两数之和 IV - 输入 BST.md)
 
-2. 三数之和（15）
+[0015.三数之和](leetcode/twopointers/0015.三数之和.md)
+
 3. 最接近的三数之和（16）
 4. 四数之和（18）
 5. 较小的三数之和（259）
