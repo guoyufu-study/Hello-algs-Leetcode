@@ -4,6 +4,7 @@
 
 [0167.两数之和 II - 输入有序数组](leetcode/twopointers/0167.两数之和 II - 输入有序数组.md)
 
+[0653.两数之和 IV - 输入 BST](leetcode/twopointers/0653.两数之和 IV - 输入 BST.md)
 
 2. 三数之和（15）
 3. 最接近的三数之和（16）
