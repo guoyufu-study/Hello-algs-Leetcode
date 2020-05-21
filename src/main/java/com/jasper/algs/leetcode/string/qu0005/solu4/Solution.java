@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.string.qu0005.solu4;
 
 /**
- * 中心扩展法
+ * 0005. 最长回文子串
+ * 
+ * <p>中心扩展法
  */
 public class Solution {
 
