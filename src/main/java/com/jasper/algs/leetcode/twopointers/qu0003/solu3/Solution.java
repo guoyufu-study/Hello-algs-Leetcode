@@ -20,10 +20,10 @@ public class Solution {
 		while (right < s.length()) {
 			// 读过
 			if (map.containsKey(s.charAt(right))) {
-				left = Math.max(map.get(s.charAt(right)), left);// 尝试更新左边界
+				left = Math.max(map.get(s.charAt(right)), left);// 收缩窗口：尝试更新左边界
 			}
 			
-			++right;// 更新右边界
+			++right;// 扩展窗口：更新右边界
 			map.put(s.charAt(right), right);//更新字典（或入字典）
 			ans = Math.max(ans, right - left);// 更新最大长度
 		}
