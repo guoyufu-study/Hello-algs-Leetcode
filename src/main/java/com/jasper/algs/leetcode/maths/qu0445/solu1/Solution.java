@@ -5,8 +5,9 @@ import java.util.Random;
 import com.jasper.algs.leetcode.maths.qu0445.ListNode;
 
 /**
- * 翻转求和，再翻转
- *
+ * 0445.两大数相加 II（正序链表）
+ * 
+ * <p>翻转求和，再翻转
  */
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -45,14 +46,18 @@ class Solution {
 //		}
 //		System.out.println();
 		
+    	// 边界
+		if(l==null) return l;
 		
-    	ListNode prev = null, next = null;
-    	while(l!=null) {
-    		next = l.next;
+		// 反转
+    	ListNode prev = null, next = l.next;
+    	while(next!=null) {
     		l.next = prev;
     		prev = l;
     		l = next;
+    		next = l.next;
     	}
+    	l.next = prev;
     	
 //    	System.out.print("翻转后：");
 //    	p = prev;
@@ -62,7 +67,7 @@ class Solution {
 //		}
 //		System.out.println();
 		
-    	return prev;
+    	return l;
     }
     
     public static void main(String[] args) {
