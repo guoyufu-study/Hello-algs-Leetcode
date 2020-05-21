@@ -14,4 +14,4 @@
 
 [视频 - 前缀表及失配处理](https://www.bilibili.com/video/BV1Px411z7Yo?from=search&seid=7190989453379966938)
 
-[视频 - 代码实现](https://www.bilibili.com/video/BV1Px411z7Yo?from=search&seid=7190989453379966938)
+[视频 - 代码实现](https://www.bilibili.com/video/BV1hW411a7ys/?spm_id_from=333.788.videocard.0)
