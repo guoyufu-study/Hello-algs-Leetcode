@@ -1,3 +1,5 @@
+## 字符串匹配算法
+
 ### 暴力搜索
 
 `java.util.String`类的`indexOf`方法

@@ -1,4 +1,4 @@
-package com.jasper.algs.summary.stringmatching;
+package com.jasper.algs.leetcode.string;
 
 public class KMP {
 
