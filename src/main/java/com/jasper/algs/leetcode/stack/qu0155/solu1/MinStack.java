@@ -3,7 +3,9 @@ package com.jasper.algs.leetcode.stack.qu0155.solu1;
 import java.util.Stack;
 
 /**
- * 两个栈，数据栈，辅助栈（存每次最小值）
+ * 0155. 最小栈
+ * 
+ * <p>两个栈，数据栈，辅助栈（存每次最小值）
  */
 class MinStack {
 	
