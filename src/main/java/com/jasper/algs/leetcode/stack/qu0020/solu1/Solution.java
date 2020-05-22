@@ -3,7 +3,12 @@ package com.jasper.algs.leetcode.stack.qu0020.solu1;
 import java.util.HashMap;
 import java.util.Stack;
 
-public class Solution {
+/**
+ * 0020. 有效的括号
+ * 
+ * <p> 辅助栈
+ */
+class Solution {
 
 	// Hash 表
 	private HashMap<Character, Character> mappings;
