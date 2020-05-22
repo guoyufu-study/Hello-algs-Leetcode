@@ -4,7 +4,9 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * 两个队列，压入 -O(1)， 弹出 -O(n)
+ * 0225. 用队列实现栈
+ * 
+ * <p>两个队列，压入 -O(1)， 弹出 -O(n)
  */
 class MyStack {
 	
