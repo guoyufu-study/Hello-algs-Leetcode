@@ -8,6 +8,7 @@
 
 [Mathjax语法总结](https://blog.csdn.net/ajacker/article/details/80301378)
 
+[Mathjax与LaTex公式简介](https://www.cnblogs.com/linxd/p/4955530.html)
 
 ## 等式换行对齐
 
@@ -48,3 +49,19 @@ $$
 使用over分割组内分数，例如`\\({a+1 \over b+1}\\)` ，显示为 \\({a+1 \over b+1}\\) ；
 
 使用cfrac命令对于连续的分数，例如`\\(\cfrac{a}{b+1}\\)` ，显示为 \\(\cfrac{a}{b+1}\\) 。
+
+## 逻辑运算符
+
+
+
+| 含义 |   表达式   |     显示结果     |
+| :--: | :--------: | :--------------: |
+| 因为 |  \because  |  \\(\because\\)  |
+| 所以 | \therefore | \\(\therefore\\) |
+|  与  |   \land    |   \\(\land\\)    |
+|  或  |    \lor    |    \\(\lor\\)    |
+|  非  |   \lnot    |   \\(\lnot\\)    |
+
+
+
+$$\forall \exists \top \bot \vdash \vDash$$
