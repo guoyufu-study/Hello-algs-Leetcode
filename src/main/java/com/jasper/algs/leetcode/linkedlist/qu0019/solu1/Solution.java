@@ -9,7 +9,7 @@ import com.jasper.algs.leetcode.linkedlist.ListNode;
  */
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
-    	
+    	// 简化删除头节点问题
     	ListNode dummy = new ListNode(0);
     	dummy.next = head;
     	
