@@ -1,8 +1,9 @@
 package com.jasper.algs.leetcode.dynamicprogramming.qu0122.solu1;
 
 /**
- * 暴力搜索
+ * 0122. 买卖股票的最佳时机II
  *
+ * <p>暴力搜索
  */
 class Solution {
 

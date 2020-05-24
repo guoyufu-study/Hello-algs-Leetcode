@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.dynamicprogramming.qu0122.solu2;
 
 /**
- * 贪心算法
+ * 0122. 买卖股票的最佳时机II
+ *
+ * <p>贪心算法
  */
 class Solution {
     public int maxProfit(int[] prices) {
