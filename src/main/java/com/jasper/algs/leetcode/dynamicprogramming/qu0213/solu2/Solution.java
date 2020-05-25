@@ -7,14 +7,13 @@ package com.jasper.algs.leetcode.dynamicprogramming.qu0213.solu2;
  */
 class Solution {
     public int rob(int[] nums) {
-    	// 边界：空数组、长度1数组
-    	if(nums==null || nums.length==0)
-    		return 0;
-    	if(nums.length==1)
-    		return nums[0];
-
-    	// 长度>=2数组
+    	// 边界：空数组、长度1数组、长度2数组
     	int N = nums.length;
+    	if(N==0) return 0;
+    	if(N==1) return nums[0];
+    	if(N==2) return Math.max(nums[0], nums[1]);
+    	
+    	// 长度>2数组
     	
     	// 区间[0, N-2]
     	int[] dp = new int[N];
