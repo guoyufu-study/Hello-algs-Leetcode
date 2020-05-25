@@ -1,7 +1,7 @@
 package com.jasper.algs.leetcode.hashmap.qu1103.solu2;
 
 /**
- * 1103. 分糖果 II
+ * 1103. 分糖果II (等差分糖果)
  * 
  * <p>等差数列求和
  */

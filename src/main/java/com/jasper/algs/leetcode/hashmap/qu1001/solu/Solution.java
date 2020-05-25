@@ -3,6 +3,7 @@ package com.jasper.algs.leetcode.hashmap.qu1001.solu;
 /**
  * 1001. 网格照明
  * 
+ * <p> 2刷
  */
 class Solution {
 	
