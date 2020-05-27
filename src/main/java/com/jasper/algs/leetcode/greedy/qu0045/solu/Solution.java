@@ -11,4 +11,11 @@ class Solution {
     	
     	return 0;
     }
+    
+    public static void main(String[] args) {
+    	// 2
+		int[] nums = new int[] {2,3,1,1,4};
+		
+		System.out.println(new Solution().jump(nums));
+	}
 }
