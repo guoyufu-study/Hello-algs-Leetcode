@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * 0827. 最大人工岛
  *
- * <p> DFS
+ * <p> DFS + 字典
  */
 class Solution {
     int[] dr = new int[]{-1, 0, 1, 0};
