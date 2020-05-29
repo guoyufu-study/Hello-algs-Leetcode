@@ -2,8 +2,8 @@ package com.jasper.algs.leetcode.dynamicprogramming.qu0084.solu3;
 
 /**
  * 0084. 柱状图中最大的矩形
- * 
- * <p>分治算法
+ *
+ *	<p>暴力求解2：简单实现
  */
 class Solution {
     public int largestRectangleArea(int[] heights) {
@@ -11,36 +11,33 @@ class Solution {
     	int N = heights.length;
 		if(N==0) return 0;
     	
-		// 最大矩形面积
-    	return calculateArea(heights, 0, N-1);
-    }
-    
-    /**
-     * 求最大矩形面积
-     * 
-     * @param heights 原高度数组
-     * @param start 左侧柱子，闭区间
-     * @param end 右侧柱子，闭区间
-     * @return
-     */
-    public int calculateArea(int[] heights, int start, int end) {
-    	// 终止
-    	if(start>end) return 0;
+    	int ans = 0;
     	
-    	int minindex = start;	// 定位最小高度
-        for (int i = start; i <= end; i++)
-            if (heights[minindex] > heights[i])
-                minindex = i;
-
-        return Math.max(heights[minindex] * (end - start + 1), // 最小高度矩形
-        		Math.max(calculateArea(heights, start, minindex - 1),//左侧矩形
-        				calculateArea(heights, minindex + 1, end)));//右侧矩形
-
+    	for (int i = 0; i < N; i++) {
+    		//定位矩形高度
+			int height = heights[i];
+			
+			// 定位最左边界
+			int left = i;
+			while (left>0 && heights[left] >= heights[i]) left--;
+			if(heights[left] < heights[i]) left++;
+			
+			// 定位最右边界
+			int right = i;
+			while(right<N-1 && heights[right] >= heights[i]) right++;
+			if(heights[right] < heights[i]) right--;
+			
+			// 计算尽可能大的矩形面积
+			ans = Math.max(height*(right-left+1), ans);
+		}
+    	
+    	return ans;
     }
     
     public static void main(String[] args) {
 		int[] heights = new int[] {2,1,5,6,2,3};
 		
-		new Solution().largestRectangleArea(heights);
+		int area = new Solution().largestRectangleArea(heights);
+		System.out.println(area);
 	}
 }

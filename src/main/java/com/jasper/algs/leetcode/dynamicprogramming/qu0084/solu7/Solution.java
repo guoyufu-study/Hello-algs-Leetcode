@@ -1,7 +1,9 @@
-package com.jasper.algs.leetcode.dynamicprogramming.qu0084.solu4;
+package com.jasper.algs.leetcode.dynamicprogramming.qu0084.solu7;
 
 /**
- * 优化分治算法
+ * 0084. 柱状图中最大的矩形
+ * 
+ * <p>优化分治算法
  */
 class Solution {
 	public int largestRectangleArea(int[] height) {
