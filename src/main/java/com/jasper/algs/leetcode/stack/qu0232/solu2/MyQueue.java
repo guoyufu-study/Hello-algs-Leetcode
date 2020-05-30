@@ -3,13 +3,14 @@ package com.jasper.algs.leetcode.stack.qu0232.solu2;
 import java.util.Stack;
 
 /**
- * 用栈实现队列
+ * 0232. 用栈实现队列
  * 
  * <p>两个栈 入队 - O(1)，出队 - 摊还复杂度 O(1)
  */
 class MyQueue {
-	
+	// 出队栈：只管出。没值，将入队栈全部倒入出队栈，再出。
 	private Stack<Integer> outStack;
+	// 入队栈：只管入
 	private Stack<Integer> inStack;
 	
     /** 初始化数据结构 */
