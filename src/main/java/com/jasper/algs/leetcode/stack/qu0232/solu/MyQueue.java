@@ -1,9 +1,9 @@
 package com.jasper.algs.leetcode.stack.qu0232.solu;
 
 /**
- * 用栈实现队列
+ * 0232. 用栈实现队列
  * 
- * <p>三刷
+ * <p>4刷
  */
 class MyQueue {
 
