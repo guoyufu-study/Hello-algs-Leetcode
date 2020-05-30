@@ -3,7 +3,7 @@ package com.jasper.algs.leetcode.linkedlist.qu0142.solu2;
 import com.jasper.algs.leetcode.linkedlist.ListNode;
 
 /**
- * 0141. 环形链表
+ * 0142. 环形链表II
  *
  * <p>快慢指针
  */
