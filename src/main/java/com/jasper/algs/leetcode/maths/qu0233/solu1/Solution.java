@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.maths.qu0233.solu1;
 
 /**
- * 暴力求解：双层遍历
+ * 0233. 数字 1 的个数
+ * 
+ * <p>暴力枚举（超时）
  */
 public class Solution {
 

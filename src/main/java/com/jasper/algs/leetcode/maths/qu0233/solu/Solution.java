@@ -1,21 +1,15 @@
-package com.jasper.algs.leetcode.maths.qu0233.solu2;
+package com.jasper.algs.leetcode.maths.qu0233.solu;
 
 /**
- * 0233. 数字 1 的个数
+ * 233. 数字 1 的个数
  * 
- * <p> 数学性质
+ * <p> 2刷
  */
 public class Solution {
 
 	public int countDigitOne(int n) {
+		int ans=0;
 		
-		int ans = 0;
-	    for (long baseCount = 1; baseCount <= n; baseCount *= 10) {
-	        long divider = baseCount * 10; // 注意溢出问题
-	        ans += (n / divider) * baseCount + 
-	        		Math.min(Math.max(n % divider - baseCount + 1, 0), baseCount);
-	    }
-
 		return ans;
     }
 	
