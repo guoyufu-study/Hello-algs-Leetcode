@@ -1,31 +1,16 @@
-package com.jasper.algs.leetcode.array.qu0238.solu2;
+package com.jasper.algs.leetcode.array.qu0238.solu;
 
 import java.util.stream.IntStream;
 
 /**
  * 0238. 除自身以外数组的乘积
  * 
- * <p>左侧乘积*右侧乘积
+ * <p> 3 刷
  */
 class Solution {
 	public int[] productExceptSelf(int[] nums) {
 		int N = nums.length;
 		int[] ans = new int[N];
-		
-		// 左侧乘积
-		ans[0] = 1;
-		for (int i = 1; i < N; i++) {
-			ans[i] = ans[i-1] * nums[i-1];
-		}
-		
-		// 右侧乘积
-		int R = 1;
-		for (int i = N-2; i >= 0; i--) {
-			R *= nums[i+1];
-			
-			// 两侧相乘
-			ans[i] *= R;
-		}
 		
 		return ans;
     }
