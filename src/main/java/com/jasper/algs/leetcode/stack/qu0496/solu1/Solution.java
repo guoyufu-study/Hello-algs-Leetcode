@@ -1,7 +1,12 @@
 package com.jasper.algs.leetcode.stack.qu0496.solu1;
 
+/**
+ * 0496. 下一个更大的元素 I
+ * 
+ * <p> 暴力求解
+ */
 class Solution {
-	// 暴力求解
+
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
     	
     	boolean getBigger = false;//开关：false，找x；true，找比x大的值。
