@@ -1,4 +1,4 @@
-package com.jasper.algs.interview.qu1577.solu3;
+package com.jasper.algs.interview.qu1587.solu3;
 
 /**
  * 3. 辅助字典

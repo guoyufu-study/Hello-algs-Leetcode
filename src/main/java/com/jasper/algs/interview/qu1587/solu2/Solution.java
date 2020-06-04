@@ -1,4 +1,4 @@
-package com.jasper.algs.interview.qu1577.solu2;
+package com.jasper.algs.interview.qu1587.solu2;
 
 import java.util.Arrays;
 

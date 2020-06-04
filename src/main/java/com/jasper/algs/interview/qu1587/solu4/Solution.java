@@ -1,7 +1,9 @@
-package com.jasper.algs.interview.qu1577.solu4;
+package com.jasper.algs.interview.qu1587.solu4;
 
 /**
- * 4. 位运算
+ * 1587. 面试题 17.19. 消失的两个数字
+ * 
+ * <p>4. 位运算
  * 
  * <p>关键在于，如何排除其中一个缺失数字，将问题转变成求消失的一个数问题
  */

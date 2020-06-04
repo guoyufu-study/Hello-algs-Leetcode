@@ -1,4 +1,4 @@
-package com.jasper.algs.interview.qu1577.solu1;
+package com.jasper.algs.interview.qu1587.solu1;
 
 /**
  * 暴力求解：逐个比较
