@@ -113,6 +113,13 @@ class Solution {
 	
 	public static void main(String[] args) {
 		int n = 4;
-		new Solution().solveNQueens(n);
+		
+		new Solution().solveNQueens(n).stream()
+			.forEach( list -> {
+				for (int i = 0; i < list.size(); i++) {
+					System.out.println(list.get(i));
+				}
+				System.out.println();
+			});
 	}
 }
