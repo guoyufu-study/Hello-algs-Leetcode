@@ -10,11 +10,13 @@ import java.util.Arrays;
 class Solution {
     public String largestNumber(int[] nums) {
 
+    	// 数字 -> 字符串
     	String[] asStrs = new String[nums.length];
     	for (int i = 0; i < asStrs.length; i++) {
 			asStrs[i] = String.valueOf(nums[i]);
 		}
     	
+    	// 排序
     	Arrays.sort(asStrs, (a,b)->{
     		return (b+a).compareTo(a+b);
     	});
@@ -24,6 +26,7 @@ class Solution {
             return "0";
         }
     	
+    	// 构造答案
     	StringBuilder ans = new StringBuilder();
     	for (String numAsStr : asStrs) {
 			ans.append(numAsStr);
