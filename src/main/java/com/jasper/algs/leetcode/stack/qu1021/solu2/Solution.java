@@ -2,6 +2,11 @@ package com.jasper.algs.leetcode.stack.qu1021.solu2;
 
 import java.util.Stack;
 
+/**
+ * 1021. 删除最外层括号
+ * 
+ * <p> 辅助栈
+ */
 class Solution {
 
 	public String removeOuterParentheses(String S) {
@@ -11,15 +16,17 @@ class Solution {
 		// 辅助栈
 		Stack<Character> stack = new Stack<>();
 		for (int i = 0; i < S.length(); i++) {
+			// 开括号：压入开括号
+			if(S.charAt(i)=='(') {
+				if(!stack.isEmpty()) ans.append('(');
+				stack.push('(');
+			}
+			
 			//闭括号：弹出开括号
-			if(S.charAt(i)==')') {
+			else {
 				stack.pop();
 				if(!stack.isEmpty()) ans.append(')');
-				continue;
 			}
-			// 开括号：压入开括号
-			if(!stack.isEmpty()) ans.append('(');
-			stack.push('(');
 		}
 		
 		return ans.toString();

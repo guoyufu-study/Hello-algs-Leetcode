@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.stack.qu1021.solu1;
 
 /**
- * 计数器
+ * 1021. 删除最外层括号
+ * 
+ * <p>计数器
  */
 class Solution {
 
