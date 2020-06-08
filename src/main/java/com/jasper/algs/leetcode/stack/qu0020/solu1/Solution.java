@@ -1,6 +1,7 @@
 package com.jasper.algs.leetcode.stack.qu0020.solu1;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
 /**
@@ -11,40 +12,39 @@ import java.util.Stack;
 class Solution {
 
 	// Hash 表
-	private HashMap<Character, Character> mappings;
-
+	private static Map<Character, Character> mappings = new HashMap<>();
 	// 初始化，目的是为了代码更易读
-	public Solution() {
-		this.mappings = new HashMap<Character, Character>();
-		this.mappings.put(')', '(');
-		this.mappings.put('}', '{');
-		this.mappings.put(']', '[');
+	static {
+		mappings.put(')', '(');
+		mappings.put(']', '[');
+		mappings.put('}', '{');
 	}
-
+	
 	public boolean isValid(String s) {
 
 		// 辅助栈
 		Stack<Character> stack = new Stack<Character>();
-
-		for (int i = 0; i < s.length(); i++) {
-			char c = s.charAt(i);
+		
+		for (char c : s.toCharArray()) {
+			switch (c) {
+			// 开括号：入栈
+			case '(':
+			case '[':
+			case '{':
+				stack.push(c);
+				break;
 
 			// 闭括号：出栈
-			if (this.mappings.containsKey(c)) {
-
+			default:
 				// 出栈，默认'#'
 				char topElement = stack.empty() ? '#' : stack.pop();
-
 				// 如果闭括号与出栈值不匹配，返回false
-				if (topElement != this.mappings.get(c)) {
+				if(topElement != mappings.get(c)) 
 					return false;
-				}
-			} else {
-				// 开括号：入栈
-				stack.push(c);
+				break;
 			}
 		}
-
+		
 		// 栈中有值，返回false；无值，返回true
 		return stack.isEmpty();
 	}
