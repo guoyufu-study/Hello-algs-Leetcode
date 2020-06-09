@@ -9,8 +9,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import com.jasper.algs.leetcode.string.qu0006.solu1.Solution;
-
 class SolutionTest {
 
 	@ParameterizedTest
