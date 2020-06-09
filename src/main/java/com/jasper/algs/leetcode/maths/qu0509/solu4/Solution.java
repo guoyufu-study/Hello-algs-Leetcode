@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.maths.qu0509.solu4;
 
 /**
- * 矩阵求幂
+ * 0509.斐波那契数
+ * 
+ * <p>矩阵求幂
  */
 class Solution {
     int fib(int N) {
