@@ -1,5 +1,10 @@
-package com.jasper.algs.leetcode.maths.qu0009.solu1;
+package com.jasper.algs.leetcode.maths.qu0009.solu2;
 
+/**
+ * 0009. 回文数
+ * 
+ * <p> 反转整数
+ */
 class Solution {
     public boolean isPalindrome(int x) {
     	// 边界值处理
