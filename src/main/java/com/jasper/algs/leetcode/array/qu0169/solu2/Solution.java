@@ -3,7 +3,9 @@ package com.jasper.algs.leetcode.array.qu0169.solu2;
 import java.util.Arrays;
 
 /**
- * 排序 -> 中间数
+ * 0169.求众数I
+ * 
+ * <p> 排序 -> 中间数
  */
 class Solution {
     public int majorityElement(int[] nums) {

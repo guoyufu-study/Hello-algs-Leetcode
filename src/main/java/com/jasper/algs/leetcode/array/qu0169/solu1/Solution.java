@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 辅助字典
+ * 0169.求众数I
+ * 
+ * <p> 辅助字典
  */
 class Solution {
     public int majorityElement(int[] nums) {

@@ -1,10 +1,26 @@
 package com.jasper.algs.leetcode.array.qu0169.solu3;
 
 /**
- * 摩尔投票
+ * 0169.求众数I
+ * 
+ * <p> 摩尔投票
  */
 class Solution {
-    public int majorityElement(int[] nums) {
+	
+	public int majorityElement(int[] nums) {
+		
+        int ans = 0, // 候选人
+        		votes = 0;// 计票
+        for(int num : nums) {
+        	// 尝试更换候选人
+            if(votes==0) ans = num;
+            votes += ans==num ? 1 // 投票
+            		: -1;// 再抵消投票
+        }
+        return ans;
+    }
+	
+    public int majorityElement2(int[] nums) {
     	
     	int candidate = nums[0], // 候选人
     			count = 1; // 计票
