@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.c191.qu5424.solu;
+package com.jasper.algs.contest.weekly.c191.qu1464.solu;
 
 /**
  * 5424. 数组中两元素的最大乘积
