@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.c191.qu5425.solu1;
+package com.jasper.algs.contest.weekly.c191.qu1465.solu1;
 
 import java.util.Arrays;
 

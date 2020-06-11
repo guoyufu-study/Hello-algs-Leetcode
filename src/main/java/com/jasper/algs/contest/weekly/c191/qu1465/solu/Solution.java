@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.c191.qu5425.solu;
+package com.jasper.algs.contest.weekly.c191.qu1465.solu;
 
 /**
  * 5425. 切割后面积最大的蛋糕
