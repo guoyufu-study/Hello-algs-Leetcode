@@ -33,7 +33,7 @@ public class SolutionTest {
 	@ParameterizedTest
 	@MethodSource("data")
 	public void testThreeSum2(int[] input, int[][] expected) {//暴力求解
-		List<List<Integer>> threeSum = new com.jasper.algs.leetcode.twopointers.qu0015.solu3.Solution()
+		List<List<Integer>> threeSum = new com.jasper.algs.leetcode.twopointers.qu0015.solu2.Solution()
 				.threeSum(input);
 		System.out.println(threeSum);
 	}
