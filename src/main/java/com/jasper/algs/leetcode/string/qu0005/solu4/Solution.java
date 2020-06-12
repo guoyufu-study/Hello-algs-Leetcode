@@ -8,27 +8,41 @@ package com.jasper.algs.leetcode.string.qu0005.solu4;
 public class Solution {
 
 	public String longestPalindrome(String s) {
-		if (s == null || s.length() < 1) return "";
+		// 边界
+		if (s == null || s.length() <= 1) 
+			return s;
 		
-		int start = 0, end = 0;
-		for (int i = 0; i < s.length(); i++) {
+		int begin = 0, maxLen = 1;
+		for (int i = 0; i < s.length(); i++) { // 注意i必须从0开始，比如 s="bb" 
 			int len1 = expandAroundCenter(s, i, i);// i为中心
 	        int len2 = expandAroundCenter(s, i, i + 1);// i, i+1两字母之间为中心
 	        int len = Math.max(len1, len2);// 更新起始索引
-	        if (len > end - start) {
-	            start = i - (len - 1) / 2;
-	            end = i + len / 2;
+	        if (len > maxLen) {
+	        	begin = i - (len - 1) / 2;
+	        	maxLen = len;
 	        }
 		}
-		return s.substring(start, end+1);//左闭右开
+		return s.substring(begin, begin+maxLen);//左闭右开
 	}
 	
 	private int expandAroundCenter(String s, int left, int right) {
-	    int L = left, R = right;//多余
-	    while (L >= 0 && R < s.length() && s.charAt(L) == s.charAt(R)) {
-	        L--;
-	        R++;
+	    while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+	    	left--;
+	    	right++;
 	    }
-	    return R - L - 1;
+	    return right - left - 1;
+	}
+	
+	public static void main(String[] args) {
+		// bab
+//		String s = "babad";
+		
+		// bb
+//		String s = "cbbd";
+		
+		// bb
+		String s = "bb";
+		
+		System.out.println(new Solution().longestPalindrome(s));
 	}
 }

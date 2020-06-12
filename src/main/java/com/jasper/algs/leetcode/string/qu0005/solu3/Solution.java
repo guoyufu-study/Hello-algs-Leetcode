@@ -10,7 +10,8 @@ public class Solution {
 	public String longestPalindrome(String s) {
 		
 		// 边界
-		if (s == null || s.length() <= 1) return s;
+		if (s == null || s.length() <= 1) 
+			return s;
 		
 		int N = s.length();
 		
@@ -19,14 +20,12 @@ public class Solution {
 		boolean[][] dp = new boolean[N][N]; // 辅助二维数组
 		for (int j = 1; j < N; j++) { // 按列填充
 			for (int i = 0; i < j; i++) {
-				if(s.charAt(i)!=s.charAt(j)) {
-					dp[i][j] = false;
+				if(s.charAt(i)!=s.charAt(j)) 
 					continue ;
-				} 
 				
-				if(j-i<3)// (j-i+1)-2<2
+				if(j-i<3)// (j-i+1)-2<2，即 长度 2 或 3
 					dp[i][j] = true;
-				else 
+				else // 长度更大
 					dp[i][j] = dp[i+1][j-1];
 				
 				// 更新答案
@@ -36,7 +35,6 @@ public class Solution {
 				}
 			}
 		}
-		
 		
 		return s.substring(begin, begin+maxLen);//左闭右开
 	}
