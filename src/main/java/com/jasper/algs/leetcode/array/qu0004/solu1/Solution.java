@@ -18,7 +18,8 @@ public class Solution {
 		int n = nums2.length;
 		
 		// 确定 i 和 j
-		int left=0, right=m, half=(m+n+1)/2;
+		int left=0, right=m, // 注意 right 不是 m-1
+				half=(m+n+1)/2;
 		int i=0, j=0;
 		while(left<=right) {//二分查找=>确定i
 			i=(right-left)/2+left;
@@ -44,12 +45,12 @@ public class Solution {
 	
 	public static void main(String[] args) {
 		// 2.0
-//		int[] nums1 = new int[] {1,3};
-//		int[] nums2 = new int[] {2};
+		int[] nums1 = new int[] {1,3};
+		int[] nums2 = new int[] {2};
 		
 		// 2.5
-		int[] nums1 = new int[] {1,2};
-		int[] nums2 = new int[] {3,4};
+//		int[] nums1 = new int[] {1,2};
+//		int[] nums2 = new int[] {3,4};
 		
 		System.out.println(new Solution().findMedianSortedArrays(nums1, nums2));
 	}
