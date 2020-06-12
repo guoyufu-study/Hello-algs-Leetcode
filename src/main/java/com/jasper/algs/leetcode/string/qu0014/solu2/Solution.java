@@ -1,5 +1,11 @@
-package com.jasper.algs.leetcode.string.qu0014.solu1;
+package com.jasper.algs.leetcode.string.qu0014.solu2;
 
+/**
+ * 0014. 最长公共前缀
+ * 
+ * <p>
+ *
+ */
 class Solution {
     public String longestCommonPrefix(String[] strs) {
     	// 边界值
