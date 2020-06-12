@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.twopointers.qu0011.solu1;
 
 /**
- * 暴力求解：尝试所有可能组合
+ * 0011. 盛最多水的容器
+ * 
+ * <p>暴力求解：尝试所有可能组合
  */
 class Solution {
 
