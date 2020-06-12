@@ -5,7 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 暴力求解:三层循环
+ * 0015.三数之和
+ * 
+ * <p>暴力求解:三层循环
  * 超时
  */
 public class Solution {
