@@ -3,26 +3,33 @@ package com.jasper.algs.leetcode.string.qu0010.solu2;
 /**
  * 0010. 正则表达式匹配
  * 
- * <p> 动态规划：迭代求解
+ * <p> 动态规划：递归求解
  */
 class Solution {
+	
+	private String s;
+	private String p;
+	private Result[][] helper;
+	
     public boolean isMatch(String s, String p) {
     	
-    	return isMatch(s, p, 0, 0, new Result[s.length()+1][p.length()+1]);
+    	this.s = s;
+    	this.p = p;
+    	helper = new Result[s.length()+1][p.length()+1];
+    	
+    	return isMatch(0, 0);
     }
 
     /**
      * 
-     * @param s		匹配串
-     * @param p		匹配模式串
      * @param i
      * @param j
      * @param helper
      * @return
      */
-	private boolean isMatch(String s, String p, int i, int j, Result[][] helper) {
+	private boolean isMatch(int i, int j) {
     	
-    	// 查找
+    	// 使用缓存
     	if(helper[i][j]!=null) 
     		return helper[i][j]==Result.TRUE;
     	
@@ -38,13 +45,13 @@ class Solution {
     	
     	// 匹配 * 
     	if(j+1<p.length() && p.charAt(j+1)=='*') {
-    		helper[i][j] = isMatch(s, p, i, j+2, helper) || // 匹配0次
-    				(firstMatch && isMatch(s, p, i+1, j, helper))  // 匹配1次
+    		helper[i][j] = isMatch(i, j+2) || // 匹配0次
+    				(firstMatch && isMatch(i+1, j))  // 匹配1次
     				? Result.TRUE : Result.FALSE;
     	} 
     	// 匹配字母和.
     	else {
-    		helper[i][j] = firstMatch && isMatch(s, p, i+1, j+1, helper) 
+    		helper[i][j] = firstMatch && isMatch(i+1, j+1) 
     				? Result.TRUE : Result.FALSE;
     	}
     	
