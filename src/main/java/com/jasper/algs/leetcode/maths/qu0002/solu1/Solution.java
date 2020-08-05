@@ -1,6 +1,6 @@
 package com.jasper.algs.leetcode.maths.qu0002.solu1;
 
-import com.jasper.algs.leetcode.maths.qu0002.ListNode;
+import com.jasper.algs.leetcode.linkedlist.ListNode;
 
 /**
  * <p>思路清晰！！！
