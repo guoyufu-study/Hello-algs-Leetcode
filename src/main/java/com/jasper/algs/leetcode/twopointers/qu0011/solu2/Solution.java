@@ -13,10 +13,9 @@ package com.jasper.algs.leetcode.twopointers.qu0011.solu2;
 class Solution {
 
 	public int maxArea(int[] height) {
-		int length = height.length;
-		if(length<=1) return 0;
+		//  n 的值至少为 2 => 不必考虑边界问题
 		
-		int left=0, right=length-1;// 左右指针
+		int left=0, right=height.length-1;// 左右指针
 		int leftMax=height[left], rightMax=height[right];//左右最大值
 		int ans = (right-left)*Math.min(leftMax, rightMax);// 答案
 		
