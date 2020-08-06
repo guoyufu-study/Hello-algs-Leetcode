@@ -3,7 +3,7 @@ package com.jasper.algs.leetcode.maths.qu0009.solu;
 /**
  * 0009. 回文数
  * 
- * <p> 3 刷
+ * <p> 5 刷
  */
 class Solution {
     public boolean isPalindrome(int x) {
