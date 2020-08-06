@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.maths.qu0007.solu2;
 
 /*
- * 简化溢出检查
+ * 0007. 反转十进制整数
+ *
+ * <p简化溢出检查
  * <p>
  * ans == Integer.MAX_VALUE / 10时，pop > 7不可能出现。
  * <p>

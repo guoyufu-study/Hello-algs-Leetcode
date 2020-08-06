@@ -1,5 +1,10 @@
 package com.jasper.algs.leetcode.maths.qu0007.solu1;
 
+/**
+ * 0007. 反转十进制整数
+ *
+ * <p>弹出推入数字 & 溢出前检查
+ */
 public class Solution {
 
 	public int reverse(int x) {
