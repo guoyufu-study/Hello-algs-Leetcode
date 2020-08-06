@@ -24,8 +24,8 @@ public class Solution {
 		while(left<=right) {//二分查找=>确定i
 			i=(right-left)/2+left;
 			j = half - i;
-			if(i>left && nums1[i-1]>nums2[j]) right=i-1;//大了，左移
-			else if(i<right && nums2[j-1]>nums1[i]) left=i+1;//小了，右移
+			if(i>0 && j<n && nums1[i-1]>nums2[j]) right=i-1;//大了，左移
+			else if(j>0 && i<m  && nums2[j-1]>nums1[i]) left=i+1;//小了，右移
 			else break; // 找到
 		}
 		
@@ -40,7 +40,7 @@ public class Solution {
 							j==n ? nums1[0] : //i==0，且m=n时，会导致j=n
 								Math.min(nums1[i], nums2[j]);
 		
-		return (maxLeft+minRight)/2.0; // 偶数
+		return (minRight-maxLeft)/2.0 + maxLeft; // 偶数
 	}
 	
 	public static void main(String[] args) {
