@@ -1,5 +1,10 @@
 package com.jasper.algs.leetcode.greedy.qu0012.solu1;
 
+/**
+ * 0012. 整数转罗马数字
+ * 
+ * <p> 查字典
+ */
 class Solution {
 	
 	private static final String[][] dic_orgi;
