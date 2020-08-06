@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 使用HashMap
+ * 0013. 罗马数字转整数
+ * 
+ * <p>使用HashMap
  */
 class Solution {
 	
@@ -33,11 +35,5 @@ class Solution {
         ans += prev;
         return ans;
     }
-
- 
- 
-    public static void main(String[] args) {
-		
-	}
 
 }
