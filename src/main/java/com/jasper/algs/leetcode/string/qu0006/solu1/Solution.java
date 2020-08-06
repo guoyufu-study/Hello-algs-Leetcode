@@ -23,6 +23,7 @@ public class Solution {
 		boolean goingDown = false;
 		for (char c : s.toCharArray()) {
 			rows[row].append(c);
+			// 计算下一个行号
 			if(row==0 || row==numRows-1) goingDown = !goingDown;
 			row += goingDown ? 1 : -1;
 		}
