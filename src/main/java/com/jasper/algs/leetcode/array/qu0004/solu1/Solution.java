@@ -8,14 +8,15 @@ package com.jasper.algs.leetcode.array.qu0004.solu1;
 public class Solution {
 
 	public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-		// 保证 num1.length <= nums2.length
-		if(nums1.length>nums2.length) {
+		// 确保m<=n
+		int m = nums1.length, n = nums2.length;
+		if(m>n) {
 			int[] tmp = nums1;
 			nums1 = nums2;
 			nums2 = tmp;
 		}
-		int m = nums1.length;
-		int n = nums2.length;
+		m = nums1.length;
+		n = nums2.length;
 		
 		// 确定 i 和 j
 		int left=0, right=m, // 注意 right 不是 m-1
@@ -34,13 +35,13 @@ public class Solution {
 							j==0? nums1[m-1] : //i==m，且m=n时，可能导致j=0
 								Math.max(nums1[i-1], nums2[j-1]);
 					
-		if((m+n)%2==1) return maxLeft;// 奇数
+		if((n-m)%2==1) return maxLeft;// 奇数个
 		
 		int minRight= i==m ? nums2[j] :
 							j==n ? nums1[0] : //i==0，且m=n时，会导致j=n
 								Math.min(nums1[i], nums2[j]);
 		
-		return (minRight-maxLeft)/2.0 + maxLeft; // 偶数
+		return (minRight-maxLeft)/2.0 + maxLeft; // 偶数个
 	}
 	
 	public static void main(String[] args) {
