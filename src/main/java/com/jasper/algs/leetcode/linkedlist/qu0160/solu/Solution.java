@@ -5,7 +5,7 @@ import com.jasper.algs.leetcode.linkedlist.ListNode;
 /**
  * 0160. 相交链表
  * 
- * <p> 2 刷
+ * <p> 5 刷
  */
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
