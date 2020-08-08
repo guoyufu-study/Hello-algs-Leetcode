@@ -5,7 +5,7 @@ import com.jasper.algs.leetcode.linkedlist.ListNode;
 /**
  * 0083. 删除排序链表中的重复元素
  * 
- * <p> 哨兵
+ * <p> 保留最后一个元素
  */
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
@@ -13,20 +13,13 @@ class Solution {
     	// 边界
     	if(head==null) return head;
     	
-    	// 哨兵
     	ListNode dummy = new ListNode(head.val-1);
-    	dummy.next = head;
-    	
-    	// 前驱
-    	ListNode prev = dummy;
+    	ListNode tail = dummy;
     	while(head!=null) {
-    		// 删除重复元素
-    		if(head.val == prev.val) {
-    			prev.next = head.next;
-    		
-    		// 跳过不重复元素
-    		} else {
-    			prev = head;
+    		// 跳过重复元素
+    		if(head.next==null || head.val != head.next.val) {
+    			tail.next = head;
+    			tail = head;
     		}
     		
     		head = head.next;
