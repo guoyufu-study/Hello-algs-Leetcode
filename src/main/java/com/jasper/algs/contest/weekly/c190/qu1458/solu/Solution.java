@@ -1,9 +1,9 @@
-package com.jasper.algs.leetcode.dynamicprogramming.qu1458.solu;
+package com.jasper.algs.contest.weekly.c190.qu1458.solu;
 
 /**
  * 1458. 两个子序列的最大点积
  * 
- * <p> 3 刷
+ * <p> 4刷
  */
 class Solution {
     public int maxDotProduct(int[] nums1, int[] nums2) {

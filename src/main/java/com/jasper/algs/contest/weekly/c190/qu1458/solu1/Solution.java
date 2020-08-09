@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.dynamicprogramming.qu1458.solu1;
+package com.jasper.algs.contest.weekly.c190.qu1458.solu1;
 
 /**
  * 1458. 两个子序列的最大点积
