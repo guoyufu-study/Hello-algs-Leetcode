@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.interval.qu5412;
+package com.jasper.algs.contest.weekly.c189.qu1450.solu1;
 
 /**
  * 5412. 在既定时间点做作业的学生人数
