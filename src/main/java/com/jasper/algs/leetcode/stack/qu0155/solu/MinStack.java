@@ -3,7 +3,7 @@ package com.jasper.algs.leetcode.stack.qu0155.solu;
 /**
  * 0155. 最小栈
  * 
- * <p> 3刷
+ * <p> 4刷
  */
 class MinStack {
 
