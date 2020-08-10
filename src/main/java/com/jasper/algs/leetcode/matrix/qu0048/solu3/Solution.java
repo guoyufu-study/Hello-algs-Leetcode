@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0048.solu3;
+package com.jasper.algs.leetcode.matrix.qu0048.solu3;
 
 import java.util.Arrays;
 

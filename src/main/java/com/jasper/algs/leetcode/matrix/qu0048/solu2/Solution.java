@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0048.solu2;
+package com.jasper.algs.leetcode.matrix.qu0048.solu2;
 
 /**
  * 0048. 旋转图像
