@@ -5,7 +5,7 @@ import com.jasper.algs.leetcode.tree.TreeNode;
 /**
  * 0101. 对称二叉树
  * 
- * <p> 2刷
+ * <p> 3刷
  */
 class Solution {
     public boolean isSymmetric(TreeNode root) {
