@@ -5,7 +5,7 @@ import com.jasper.algs.leetcode.tree.TreeNode;
 /**
  * 0100. 相同的树
  * 
- * <p> 2刷
+ * <p> 4刷
  */
 class Solution {
 	public boolean isSameTree(TreeNode p, TreeNode q) {

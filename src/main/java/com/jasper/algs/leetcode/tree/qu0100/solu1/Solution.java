@@ -5,13 +5,13 @@ import com.jasper.algs.leetcode.tree.TreeNode;
 /**
  * 0100. 相同的树
  * 
- * <p> 递归
+ * <p> DFS - 递归
  */
 class Solution {
 	public boolean isSameTree(TreeNode p, TreeNode q) {
         // 边界
-		if(p==null && q==null) return true;
-		if(p==null || q==null) return false;
+		if(p==null) return q==null;
+		if(q==null) return false;
 		
 		return p.val==q.val // 值
 				&& isSameTree(p.left, q.left) // 左子树
