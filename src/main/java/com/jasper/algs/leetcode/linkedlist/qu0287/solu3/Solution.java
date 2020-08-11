@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.linkedlist.qu0287.solu3;
 
 /**
- * 快慢指针
+ * 0287. 寻找重复数
+ * 
+ * <p>快慢指针
  */
 class Solution {
     public int findDuplicate(int[] nums) {

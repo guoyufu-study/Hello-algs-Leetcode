@@ -2,7 +2,9 @@ package com.jasper.algs.leetcode.linkedlist.qu0287.solu1;
 
 
 /**
- * 二分查找
+ * 0287. 寻找重复数
+ * 
+ * <p>二分查找
  */
 class Solution {
     public int findDuplicate(int[] nums) {

@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.linkedlist.qu0287.solu2;
 
 /**
- * 位统计
+ * 0287. 寻找重复数
+ * 
+ * <p>位统计
  * 
  * <p>
  * 重复值某一位为1，则数组元素某一位上1的个数一定多于正常值；
