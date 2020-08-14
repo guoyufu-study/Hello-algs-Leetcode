@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.dynamicprogramming.qu1186.solu2;
+package com.jasper.algs.contest.weekly.c153.qu1186.solu2;
 
 /**
  * 1186. 删除一次得到子数组最大和
