@@ -1,4 +1,4 @@
-package com.jasper.algs.sword2offer.qu053i.solu1;
+package com.jasper.algs.sword2offer.qu053i.solu;
 
 /**
  * 剑指 Offer 53 - I. 在排序数组中查找数字 I
