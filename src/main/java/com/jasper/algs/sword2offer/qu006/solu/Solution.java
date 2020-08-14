@@ -1,4 +1,4 @@
-package com.jasper.algs.sword2offer.qu1558.solu;
+package com.jasper.algs.sword2offer.qu006.solu;
 
 import com.jasper.algs.leetcode.linkedlist.ListNode;
 

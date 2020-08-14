@@ -1,29 +1,26 @@
-package com.jasper.algs.sword2offer.qu1558.solu1;
-
-import java.util.Deque;
-import java.util.LinkedList;
+package com.jasper.algs.sword2offer.qu006.solu2;
 
 import com.jasper.algs.leetcode.linkedlist.ListNode;
 
 /**
  * 1558.剑指 Offer 06. 从尾到头打印链表
  *
- * <p> 辅助栈
+ * <p> 直接计数
  */
 class Solution {
 	
     public int[] reversePrint(ListNode head) {
     	ListNode p = head;
-    	Deque<ListNode> stack = new LinkedList<ListNode>();
+    	int size = 0;
     	while(p!=null) {
-    		stack.push(p);
     		p = p.next;
+    		size++;
     	}
     	
-    	int size = stack.size();
         int[] print = new int[size];
-        for (int i = 0; i < size; i++) {
-            print[i] = stack.pop().val;
+        p = head;
+        for (int i = size-1; i >= 0; i--, p=p.next) {
+            print[i] = p.val;
         }
         return print;
     }

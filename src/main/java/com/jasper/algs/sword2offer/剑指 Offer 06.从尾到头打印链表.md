@@ -1,8 +1,8 @@
 <script src="https://cdn.bootcss.com/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-## 1558.剑指 Offer 06. 从尾到头打印链表
+## 剑指 Offer 06. 从尾到头打印链表
 
-[刷题](qu1558/solu/Solution.java)
+[刷题](qu006/solu/Solution.java)
 
 ### 问题描述
 
@@ -39,7 +39,7 @@ class Solution {
 
 #### 1. 辅助栈
 
-[辅助栈](qu1558/solu1/Solution.java)
+[辅助栈](qu006/solu1/Solution.java)
 
 时间复杂度：\\(\mathcal{O}(N)\\)
 
@@ -47,7 +47,7 @@ class Solution {
 
 #### 2. 直接计数
 
-[直接计数](qu1558/solu2/Solution.java)
+[直接计数](qu006/solu2/Solution.java)
 
 时间复杂度：\\(\mathcal{O}(N)\\)
 
