@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.weekly.c201.qu1505.solu;
+package com.jasper.algs.contest.weekly.c201.qu1546.solu;
 
 /**
  * 5471. 和为目标值的非空不重叠子数组最大数目

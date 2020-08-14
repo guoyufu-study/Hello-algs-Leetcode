@@ -1,23 +1,29 @@
-package com.jasper.algs.contest.weekly.c201.qu1504.solu1;
+package com.jasper.algs.contest.weekly.c201.qu1545.solu2;
 
 /**
  * 1504.找出第 N 个二进制字符串中的第 K 位
  * 
- * <p> 模拟
+ * <p> 数学运算
  */
 class Solution {
     public char findKthBit(int n, int k) {
-    	StringBuilder sb = new StringBuilder();
-    	sb.append('0');
-    	for (int i = 1; i < n; i++) {
-			sb.append('1');
-			for (int j = sb.length()-2; j >= 0; j--) {
-				sb.append(sb.charAt(j)=='1' ? '0' : '1');
-			}
-			if(k<=sb.length()) break; // 优化
+    	int count = 0;
+    	for (int i = 0; i < n; i++) {
+    		count = (count<<1) + 1;
+    		if(k==count+1) return '1';
+			if(k<=count) break;
 		}
     	
-    	return sb.charAt(k-1);
+    	boolean isSame = true;
+    	while(k>1) {
+    		k = count - k + 1;
+    		isSame = !isSame;
+    		while(k<count) count >>= 1;
+    		if(k==count+1) return isSame ? '1' : '0';
+    		if(k>count) count = (count<<1) + 1;
+    	}
+    	
+    	return isSame ? '0' : '1';
     }
     
     public static void main(String[] args) {
@@ -42,7 +48,7 @@ class Solution {
     	
     	// 1
 //    	int n = 6, k = 58;
-    	
+
     	System.out.println(new Solution().findKthBit(n, k));
 	}
 }

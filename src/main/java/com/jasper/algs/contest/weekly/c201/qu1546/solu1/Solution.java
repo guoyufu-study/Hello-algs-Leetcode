@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.weekly.c201.qu1505.solu1;
+package com.jasper.algs.contest.weekly.c201.qu1546.solu1;
 
 import java.util.HashMap;
 import java.util.Map;

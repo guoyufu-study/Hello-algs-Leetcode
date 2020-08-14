@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.weekly.c201.qu1503.solu1;
+package com.jasper.algs.contest.weekly.c201.qu1544.solu1;
 
 import java.util.Deque;
 import java.util.LinkedList;
