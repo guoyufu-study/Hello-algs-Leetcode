@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.twopointers.qu0881.solu;
+package com.jasper.algs.contest.weekly.c096.qu0881.solu;
 
 /**
  * 0881. 救生艇

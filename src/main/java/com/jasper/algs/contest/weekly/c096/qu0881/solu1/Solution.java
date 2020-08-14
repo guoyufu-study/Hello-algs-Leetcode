@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.twopointers.qu0881.solu1;
+package com.jasper.algs.contest.weekly.c096.qu0881.solu1;
 
 import java.util.Arrays;
 
