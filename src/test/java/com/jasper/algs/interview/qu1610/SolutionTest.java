@@ -1,4 +1,4 @@
-package com.jasper.algs.interview.qu1546;
+package com.jasper.algs.interview.qu1610;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
@@ -14,21 +14,21 @@ class SolutionTest {
 	@ParameterizedTest
 	@MethodSource("data")
 	void testMaxAliveYear1(int[] birth, int[] death, int expected) {//暴力求解
-		assertThat(new com.jasper.algs.interview.qu1546.solu1.Solution().maxAliveYear(birth, death))
+		assertThat(new com.jasper.algs.interview.qu1610.solu1.Solution().maxAliveYear(birth, death))
 		.isEqualTo(expected);
 	}
 
 	@ParameterizedTest
 	@MethodSource("data")
 	void testMaxAliveYear2(int[] birth, int[] death, int expected) {//暴力求解
-		assertThat(new com.jasper.algs.interview.qu1546.solu2.Solution().maxAliveYear(birth, death))
+		assertThat(new com.jasper.algs.interview.qu1610.solu2.Solution().maxAliveYear(birth, death))
 			.isEqualTo(expected);
 	}
 
 	@ParameterizedTest
 	@MethodSource("data")
 	void testMaxAliveYear3(int[] birth, int[] death, int expected) {
-		assertThat(new com.jasper.algs.interview.qu1546.solu3.Solution().maxAliveYear(birth, death))
+		assertThat(new com.jasper.algs.interview.qu1610.solu3.Solution().maxAliveYear(birth, death))
 		.isEqualTo(expected);
 	}
 	

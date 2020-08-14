@@ -1,9 +1,9 @@
-package com.jasper.algs.interview.qu1546.solu3;
+package com.jasper.algs.interview.qu1610.solu3;
 
 /**
  * 面试题 16.10. 生存人数
  * 
- * <p>逐人统计变化
+ * <p>动态规划 ：逐人统计变化
  */
 public class Solution {
 

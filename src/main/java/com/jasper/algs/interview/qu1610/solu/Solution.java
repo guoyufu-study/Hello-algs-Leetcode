@@ -1,4 +1,4 @@
-package com.jasper.algs.interview.qu1546.solu;
+package com.jasper.algs.interview.qu1610.solu;
 
 /**
  * 面试题 16.10. 生存人数
