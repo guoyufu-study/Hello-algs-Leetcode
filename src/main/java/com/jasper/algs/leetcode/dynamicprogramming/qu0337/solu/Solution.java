@@ -1,6 +1,6 @@
 package com.jasper.algs.leetcode.dynamicprogramming.qu0337.solu;
 
-import com.jasper.algs.leetcode.dynamicprogramming.qu0337.TreeNode;
+import com.jasper.algs.leetcode.tree.TreeNode;
 
 /**
  * 0337. 打家劫舍 III
