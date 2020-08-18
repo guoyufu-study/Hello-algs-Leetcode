@@ -3,7 +3,7 @@ package com.jasper.algs.contest.weekly.c202.qu5490.solu1;
 /**
  * 5490. 吃掉 N 个橘子的最少天数
  * 
- * <p> 动态规划：超时
+ * <p> 动态规划：超内存
  */
 class Solution {
 	
