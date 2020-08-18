@@ -15,10 +15,8 @@ class Solution {
     	if(s==null || s.length()<2) 
     		return 0;
     	
-    	int ans = 0;
-    	
     	// 从左往右扫描
-    	int left=0, right=0;
+    	int ans = 0, left=0, right=0;
     	for (char c : s.toCharArray()) {
     		// 开括号
 			if(c=='(')

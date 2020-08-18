@@ -7,11 +7,11 @@ import java.util.stream.Collectors;
 /**
  * 0032. 最长有效括号
  * 
- * <p> 2刷
+ * <p> 5刷
  */
 class Solution {
     public int longestValidParentheses(String s) {
-
+    	
     	return 0;
     }
     
