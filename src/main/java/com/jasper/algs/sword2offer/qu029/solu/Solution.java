@@ -1,9 +1,9 @@
-package com.jasper.algs.sword2offer.qu1621.solu;
+package com.jasper.algs.sword2offer.qu029.solu;
 
 import java.util.stream.IntStream;
 
 /**
- * 1621.面试题29. 顺时针打印矩阵
+ * 剑指 Offer 29. 顺时针打印矩阵
  * 
  * <p> 2 刷
  */

@@ -1,4 +1,4 @@
-package com.jasper.algs.sword2offer.qu1624.solu1;
+package com.jasper.algs.sword2offer.qu040.solu1;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

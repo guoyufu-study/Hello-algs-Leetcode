@@ -1,4 +1,4 @@
-package com.jasper.algs.sword2offer.qu1624.solu3;
+package com.jasper.algs.sword2offer.qu040.solu3;
 
 import java.util.Arrays;
 

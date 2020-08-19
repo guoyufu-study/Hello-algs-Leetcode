@@ -1,4 +1,4 @@
-package com.jasper.algs.sword2offer.qu1591;
+package com.jasper.algs.sword2offer.qu010i;
 
 /**
  * 求斐波那契数的第n项

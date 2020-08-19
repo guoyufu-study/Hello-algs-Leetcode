@@ -1,6 +1,6 @@
 <script src="https://cdn.bootcss.com/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-## 面试题10- II.青蛙跳台阶问题
+## 剑指 Offer 10- II.青蛙跳台阶问题
 
 与 [0070.爬楼梯](../leetcode/dynamicprogramming/0070.爬楼梯.md) 完全相同
 
@@ -49,8 +49,8 @@ class Solution {
 
 使用**循环求余法**，防止数据溢出问题
 
-[代码实现](q1002/Solution.java)
+[代码实现](qu010ii/Solution.java)
 
 ## 相似题目
 
-[1591.面试题10-I.求斐波那契数列的第n项.md](1591.面试题10-I.求斐波那契数列的第n项.md)
+[剑指 Offer 10-I. 求斐波那契数列的第n项](剑指 Offer 10-I.求斐波那契数列的第n项.md)

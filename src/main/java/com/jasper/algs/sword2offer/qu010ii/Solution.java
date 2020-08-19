@@ -1,4 +1,4 @@
-package com.jasper.algs.sword2offer.qu1592;
+package com.jasper.algs.sword2offer.qu010ii;
 
 /**
  * 青蛙跳台阶问题
