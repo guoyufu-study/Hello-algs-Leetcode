@@ -1,45 +1,28 @@
 package com.jasper.algs.leetcode.tree.qu0111.solu1;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 import com.jasper.algs.leetcode.tree.TreeNode;
 
 /**
  * 0111. 二叉树的最小深度
  * 
- * <p> DFS
+ * <p> 递归
  */
 class Solution {
     public int minDepth(TreeNode root) {
-
-    	if(root==null) return 0;
+    	if(root==null)
+    		return 0;
     	
-    	Queue<TreeNode> queue = new LinkedList<TreeNode>();
-    	queue.offer(root);
-    	int ans = 0;
-    	while(!queue.isEmpty()) {
-    		int size = queue.size();
-    		ans++;
-    		for (int i = 0; i < size; i++) {
-    			// 出队
-				TreeNode node = queue.poll();
-				
-				// 叶子节点
-				if(node.left==null && node.right==null)
-					return ans;
-				
-				// 入队
-				if(node.left!=null){
-					queue.offer(node.left);
-				} 
-				if(node.right!=null) {
-					queue.offer(node.right);
-				}
-			}
-    	}
+    	if(root.left==null && root.right==null) 
+    		return 1;
     	
-    	return -1;
+    	int minDepth = Integer.MAX_VALUE;
+    	if(root.left!=null) 
+    		minDepth = Math.min(minDepth, minDepth(root.left));
+    	
+    	if(root.right!=null) 
+    		minDepth = Math.min(minDepth, minDepth(root.right));
+    	
+    	return minDepth + 1;
     }
     
     public static void main(String[] args) {

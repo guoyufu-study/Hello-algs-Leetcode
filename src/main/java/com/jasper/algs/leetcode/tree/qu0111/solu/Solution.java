@@ -5,7 +5,7 @@ import com.jasper.algs.leetcode.tree.TreeNode;
 /**
  * 0111. 二叉树的最小深度
  * 
- * <p> 2刷
+ * <p> 5刷
  */
 class Solution {
     public int minDepth(TreeNode root) {
