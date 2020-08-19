@@ -15,9 +15,9 @@ class Solution {
     	
     	if(root==null)
     		return root;
-    	
-    	Queue<TreeNode> queue = new LinkedList<TreeNode>();
-    	queue.offer(root);
+		@SuppressWarnings("serial")
+		Queue<TreeNode> queue = new LinkedList<TreeNode>() {{offer(root);}};
+//    	queue.offer(root);
     	while(!queue.isEmpty()) {
     		// 出队
     		TreeNode poll = queue.poll();
