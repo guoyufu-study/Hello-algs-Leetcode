@@ -1,8 +1,9 @@
 package com.jasper.algs.leetcode.dp.qu0221.solu1;
 
 /**
- * 暴力求解（优化）
+ * 0221.最大正方形
  * 
+ * <p>暴力求解（优化）
  * <p>
  * 构造所有可能的正方形，并判断。
  */
