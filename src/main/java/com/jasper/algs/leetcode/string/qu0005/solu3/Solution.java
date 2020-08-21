@@ -13,12 +13,10 @@ public class Solution {
 		if (s == null || s.length() <= 1) 
 			return s;
 		
-		int N = s.length();
-		
 		// 动态规划
-		int maxLen=1, begin=0;
-		boolean[][] dp = new boolean[N][N]; // 辅助二维数组
-		for (int j = 1; j < N; j++) { // 按列填充
+		int n = s.length(), maxLen=1, begin=0;
+		boolean[][] dp = new boolean[n][n]; // 辅助二维数组
+		for (int j = 1; j < n; j++) { // 按列填充
 			for (int i = 0; i < j; i++) {
 				if(s.charAt(i)!=s.charAt(j)) 
 					continue ;
