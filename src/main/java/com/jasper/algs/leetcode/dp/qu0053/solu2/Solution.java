@@ -10,10 +10,9 @@ class Solution {
         if(nums==null || nums.length==0)
         	return 0;
         
-    	int ans = nums[0];
-    	int pre = 0;
+    	int ans = nums[0], pre = 0;
         for (int num : nums) {
-			pre = Math.max(pre+num, num);
+			pre = pre>0 ? pre+num : num;
 			ans = Math.max(ans, pre);
 		}
         
