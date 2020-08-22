@@ -1,7 +1,7 @@
-package com.jasper.algs.contest.weekly.c202.qu5490.solu;
+package com.jasper.algs.contest.weekly.c202.qu1553.solu;
 
 /**
- * 5490. 吃掉 N 个橘子的最少天数
+ * 1553. 吃掉 N 个橘子的最少天数
  * 
  * <p> 3 刷
  */

@@ -1,10 +1,10 @@
-package com.jasper.algs.contest.weekly.c202.qu5490.solu2;
+package com.jasper.algs.contest.weekly.c202.qu1553.solu2;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 5490. 吃掉 N 个橘子的最少天数
+ * 1553. 吃掉 N 个橘子的最少天数
  * 
  * <p> 动态规划：离散
  */

@@ -1,7 +1,7 @@
-package com.jasper.algs.contest.weekly.c202.qu5488.solu1;
+package com.jasper.algs.contest.weekly.c202.qu1551.solu1;
 
 /**
- * 5488. 使数组中所有元素相等的最小操作数
+ * 1551. 使数组中所有元素相等的最小操作数
  *
  * <p>数学运算
  */

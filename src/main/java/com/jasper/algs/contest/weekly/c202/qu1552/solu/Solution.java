@@ -1,7 +1,7 @@
-package com.jasper.algs.contest.weekly.c202.qu5489.solu;
+package com.jasper.algs.contest.weekly.c202.qu1552.solu;
 
 /**
- * 5489. 两球之间的磁力
+ * 1552. 两球之间的磁力
  * 
  * <p> 3 刷
  */

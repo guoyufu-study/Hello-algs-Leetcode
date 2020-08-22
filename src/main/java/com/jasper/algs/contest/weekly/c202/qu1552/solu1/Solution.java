@@ -1,9 +1,9 @@
-package com.jasper.algs.contest.weekly.c202.qu5489.solu1;
+package com.jasper.algs.contest.weekly.c202.qu1552.solu1;
 
 import java.util.Arrays;
 
 /**
- * 5489. 两球之间的磁力
+ * 1552. 两球之间的磁力
  * 
  * <p> 二分查找
  */

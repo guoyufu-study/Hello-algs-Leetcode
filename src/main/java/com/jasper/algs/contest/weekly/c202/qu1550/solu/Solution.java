@@ -1,8 +1,8 @@
-package com.jasper.algs.contest.weekly.c202.qu5185.solu;
+package com.jasper.algs.contest.weekly.c202.qu1550.solu;
 
 
 /**
- * 5185. 存在连续三个奇数的数组
+ * 1550. 存在连续三个奇数的数组
  * 
  * <p> 3 刷
  */
