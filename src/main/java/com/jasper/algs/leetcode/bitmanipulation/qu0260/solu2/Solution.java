@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.bitmanipulation.qu0260.solu2;
 
 /**
- * 位运算：异或+掩码
+ * 0260.只出现过一次的数字 III
+ * 
+ * <p>位运算：异或+掩码
  */
 public class Solution {
 

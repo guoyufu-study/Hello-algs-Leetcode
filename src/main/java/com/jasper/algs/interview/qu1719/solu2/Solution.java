@@ -3,7 +3,9 @@ package com.jasper.algs.interview.qu1719.solu2;
 import java.util.Arrays;
 
 /**
- * 求和相减
+ * 面试题 17.19. 消失的两个数字
+ * 
+ * <p> 求和相减
  */
 class Solution {
     public int[] missingTwo(int[] nums) {

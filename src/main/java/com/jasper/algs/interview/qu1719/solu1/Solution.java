@@ -1,7 +1,9 @@
 package com.jasper.algs.interview.qu1719.solu1;
 
 /**
- * 暴力求解：逐个比较
+ * 面试题 17.19. 消失的两个数字
+ * 
+ * <p> 暴力求解：逐个比较
  */
 class Solution {
     public int[] missingTwo(int[] nums) {
