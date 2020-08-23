@@ -1,24 +1,25 @@
 package com.jasper.algs.leetcode.bitmanipulation.qu0136.solu1;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
- * HashSet求和
+ * 0136.只出现过一次的数字
+ * 
+ * <p> 暴力搜索
  */
 public class Solution {
 
 	public int singleNumber(int[] nums) {
-		Set<Integer> set = new HashSet<Integer>();
-		long sumarray=0;
-		for (int num : nums) {
-			set.add(num);
-			sumarray+=num;
-		}
-		
-		long sumset=0;
-		for (int num : set) sumset+=num;
-		
-		return (int)(2*sumset-sumarray);
+        boolean found = false;
+        for (int i = 0; i < nums.length; i ++) {
+            for (int j = 0 ; j < nums.length; j ++) {
+                if (i!=j && nums[i] == nums[j]) { // 跳出内层for
+                    found = true;
+                    break;
+                }
+            }
+            
+            if (!found)  return nums[i]; // 未找到重复数字,直接返回
+            found = false;
+        }
+        return -1;
     }
 }

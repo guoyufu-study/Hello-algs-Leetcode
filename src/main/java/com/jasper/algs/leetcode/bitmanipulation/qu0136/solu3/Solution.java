@@ -1,18 +1,26 @@
 package com.jasper.algs.leetcode.bitmanipulation.qu0136.solu3;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
- * 位运算:遍历32位计数取模
+ * 0136.只出现过一次的数字
+ * 
+ * <p> HashSet求和
  */
 public class Solution {
 
 	public int singleNumber(int[] nums) {
-		int ans=0;
-		for (int i = 0; i < 32; i++) {
-			int tmp=0;
-			for (int num : nums) tmp += (num>>i)&1;
-			ans ^= (tmp%2)<<i;
+		Set<Integer> set = new HashSet<Integer>();
+		long sumarray=0;
+		for (int num : nums) {
+			set.add(num);
+			sumarray+=num;
 		}
 		
-		return ans;
+		long sumset=0;
+		for (int num : set) sumset+=num;
+		
+		return (int)(2*sumset-sumarray);
     }
 }
