@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.bitmanipulation.qu0137.solu3;
+package com.jasper.algs.leetcode.bitmanipulation.qu0137.solu6;
 
 /**
  * 0137. 只出现过一次的数字2
