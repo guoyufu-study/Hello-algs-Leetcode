@@ -14,7 +14,7 @@ class SolutionTest {
 
 	@ParameterizedTest
 	@MethodSource("data")
-	void testSingleNumber1(int[] nums, int expected) {//HashSet 求和
+	void testSingleNumber1(int[] nums, int expected) {// 双层循环
 		int actual = new com.jasper.algs.leetcode.bitmanipulation.qu0136.solu1.Solution()
 				.singleNumber(nums);
 		assertThat(actual).isEqualTo(expected);
@@ -30,7 +30,7 @@ class SolutionTest {
 	
 	@ParameterizedTest
 	@MethodSource("data")
-	void testSingleNumber3(int[] nums, int expected) {//位运算:遍历32位计数取模
+	void testSingleNumber3(int[] nums, int expected) {//HashSet 求和
 		int actual = new com.jasper.algs.leetcode.bitmanipulation.qu0136.solu3.Solution()
 				.singleNumber(nums);
 		assertThat(actual).isEqualTo(expected);
@@ -38,15 +38,7 @@ class SolutionTest {
 	
 	@ParameterizedTest
 	@MethodSource("data")
-	void testSingleNumber4(int[] nums, int expected) {//位运算:位掩码-异或
-		int actual = new com.jasper.algs.leetcode.bitmanipulation.qu0136.solu4.Solution()
-				.singleNumber(nums);
-		assertThat(actual).isEqualTo(expected);
-	}
-	
-	@ParameterizedTest
-	@MethodSource("data")
-	void testSingleNumber5(int[] nums, int expected) {//位运算:卡诺图生成状态转移公式
+	void testSingleNumber5(int[] nums, int expected) {//位运算:遍历32位计数取模
 		int actual = new com.jasper.algs.leetcode.bitmanipulation.qu0136.solu5.Solution()
 				.singleNumber(nums);
 		assertThat(actual).isEqualTo(expected);
@@ -54,8 +46,16 @@ class SolutionTest {
 	
 	@ParameterizedTest
 	@MethodSource("data")
-	void testSingleNumber6(int[] nums, int expected) {// 双层循环
+	void testSingleNumber6(int[] nums, int expected) {//位运算:位掩码-异或
 		int actual = new com.jasper.algs.leetcode.bitmanipulation.qu0136.solu6.Solution()
+				.singleNumber(nums);
+		assertThat(actual).isEqualTo(expected);
+	}
+	
+	@ParameterizedTest
+	@MethodSource("data")
+	void testSingleNumber7(int[] nums, int expected) {//位运算:卡诺图生成状态转移公式
+		int actual = new com.jasper.algs.leetcode.bitmanipulation.qu0136.solu7.Solution()
 				.singleNumber(nums);
 		assertThat(actual).isEqualTo(expected);
 	}

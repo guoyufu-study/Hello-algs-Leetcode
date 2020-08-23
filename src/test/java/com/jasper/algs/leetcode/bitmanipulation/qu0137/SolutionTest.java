@@ -30,8 +30,24 @@ class SolutionTest {
 	
 	@ParameterizedTest
 	@MethodSource("data")
-	void testSingleNumber3(int[] nums, int expected) {//位运算
-		int actual = new com.jasper.algs.leetcode.bitmanipulation.qu0137.solu3.Solution()
+	void testSingleNumber4(int[] nums, int expected) {//位运算：统计每个位上出现1的次数取模
+		int actual = new com.jasper.algs.leetcode.bitmanipulation.qu0137.solu4.Solution()
+				.singleNumber(nums);
+		assertThat(actual).isEqualTo(expected);
+	}
+	
+	@ParameterizedTest
+	@MethodSource("data")
+	void testSingleNumber5(int[] nums, int expected) {//位运算：卡诺图法生成状态转移公式
+		int actual = new com.jasper.algs.leetcode.bitmanipulation.qu0137.solu5.Solution()
+				.singleNumber(nums);
+		assertThat(actual).isEqualTo(expected);
+	}
+	
+	@ParameterizedTest
+	@MethodSource("data")
+	void testSingleNumber6(int[] nums, int expected) {//位运算：位掩码
+		int actual = new com.jasper.algs.leetcode.bitmanipulation.qu0137.solu6.Solution()
 				.singleNumber(nums);
 		assertThat(actual).isEqualTo(expected);
 	}
