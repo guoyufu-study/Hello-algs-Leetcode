@@ -8,8 +8,18 @@ package com.jasper.algs.contest.weekly.c197.qu1512.solu;
 class Solution {
 
 	public int numIdenticalPairs(int[] nums) {
+        int[] helper = new int[101];
+        for(int num : nums) {
+        	helper[num]++;
+        }
         
-        return 0;
+        int ans = 0;
+        for (int num : helper) {
+			if(num>=2) {
+				ans += num * (num - 1) / 2;
+			}
+		}
+        return ans;
     }
 	
 	public static void main(String[] args) {

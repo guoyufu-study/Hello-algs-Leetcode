@@ -7,12 +7,20 @@ package com.jasper.algs.contest.weekly.c197.qu1513.solu;
  */
 class Solution {
 
-//	private static final int mod = 1_000_000_007;
+	private static final int mod = 1_000_000_007;
 	
 	public int numSub(String s) {
 		
-		
-		return 0;
+		int ans = 0, count = 0;
+		for(char c : s.toCharArray()) {
+			if(c=='1') count++;
+			else {
+				ans += (count+1) * count / 2;
+				ans %= mod;
+				count = 0;
+			}
+		}
+		return ans;
     }
 	
 	public static void main(String[] args) {
