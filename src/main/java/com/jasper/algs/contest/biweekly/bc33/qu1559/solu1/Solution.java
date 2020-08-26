@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.biweekly.bc33.qu5482.solu1;
+package com.jasper.algs.contest.biweekly.bc33.qu1559.solu1;
 
 /**
  * 5482. 二维网格图中探测环

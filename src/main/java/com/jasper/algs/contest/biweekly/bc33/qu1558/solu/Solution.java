@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.biweekly.bc33.qu5481.solu;
+package com.jasper.algs.contest.biweekly.bc33.qu1558.solu;
 
 /**
  * 5481. 得到目标数组的最少函数调用次数

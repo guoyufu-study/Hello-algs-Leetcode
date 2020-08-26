@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.biweekly.bc33.qu5479.solu1;
+package com.jasper.algs.contest.biweekly.bc33.qu1556.solu1;
 
 /**
  * 5479. 千位分隔数

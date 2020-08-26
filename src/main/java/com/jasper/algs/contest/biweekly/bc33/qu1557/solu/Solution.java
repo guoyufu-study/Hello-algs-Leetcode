@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.biweekly.bc33.qu5480.solu;
+package com.jasper.algs.contest.biweekly.bc33.qu1557.solu;
 
 import java.util.LinkedList;
 import java.util.List;
