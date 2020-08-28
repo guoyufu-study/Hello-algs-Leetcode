@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.greedy.qu0874.solu1;
+package com.jasper.algs.contest.weekly.c094.qu0874.solu1;
 
 import java.util.Arrays;
 import java.util.HashSet;

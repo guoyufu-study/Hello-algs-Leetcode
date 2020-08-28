@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.greedy.qu0874.solu;
+package com.jasper.algs.contest.weekly.c094.qu0874.solu;
 
 /**
  * 0874. 模拟行走机器人
