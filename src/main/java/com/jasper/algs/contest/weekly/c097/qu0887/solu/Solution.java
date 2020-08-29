@@ -1,13 +1,13 @@
-package com.jasper.algs.leetcode.dp.qu0887.solu;
+package com.jasper.algs.contest.weekly.c097.qu0887.solu;
 
 /**
  * 0887. 鸡蛋掉落
  * 
- * <p> 2 刷
+ * <p> 3 刷
  */
 class Solution {
 	public int superEggDrop(int K, int N) {
-
+		
 		return 0;
 	}
 

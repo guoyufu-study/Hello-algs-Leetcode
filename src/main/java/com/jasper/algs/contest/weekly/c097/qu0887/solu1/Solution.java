@@ -1,9 +1,9 @@
-package com.jasper.algs.leetcode.dp.qu0887.solu2;
+package com.jasper.algs.contest.weekly.c097.qu0887.solu1;
 
 /**
  * 0887. 鸡蛋掉落
  * 
- * <p> 动态规划 （优化）
+ * <p> 动态规划（超时）
  */
 class Solution {
 	public int superEggDrop(int K, int N) {
@@ -21,13 +21,12 @@ class Solution {
 			dp[i][1] = 1;
 		
 		for (int k = 2; k <= K; k++) {
-			// prev = n-x
-			int prev = 1;
 			for (int n = 2; n <= N; n++) {
-				dp[k][n] = Math.max(dp[k][prev], dp[k-1][n-prev-1])+1;
-				if(dp[k][n]>dp[k][n-1]) {
-					prev = n-1;
+				dp[k][n] = Math.max(dp[k][n-1], dp[k-1][0]);
+				for (int x = 2; x <= n; x++) {
+					dp[k][n] = Math.min(dp[k][n], Math.max(dp[k][n-x], dp[k-1][x-1]));
 				}
+				dp[k][n]++;
 			}
 		}
 		
