@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.string.qu5380.solu1;
+package com.jasper.algs.contest.weekly.c184.qu1408.solu1;
 
 import java.util.ArrayList;
 import java.util.List;
