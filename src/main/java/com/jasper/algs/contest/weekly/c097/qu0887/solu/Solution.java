@@ -3,7 +3,7 @@ package com.jasper.algs.contest.weekly.c097.qu0887.solu;
 /**
  * 0887. 鸡蛋掉落
  * 
- * <p> 3 刷
+ * <p> 4 刷
  */
 class Solution {
 	public int superEggDrop(int K, int N) {
