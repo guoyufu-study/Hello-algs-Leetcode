@@ -8,8 +8,7 @@ package com.jasper.algs.leetcode.string.qu0657.solu1;
 class Solution {
     public boolean judgeCircle(String moves) {
     	int n = moves.length();
-    	if(n%2==1)
-    		return false;
+    	if(n%2==1) return false;
     	
     	int x = 0, y = 0;
     	for (char c : moves.toCharArray()) {
