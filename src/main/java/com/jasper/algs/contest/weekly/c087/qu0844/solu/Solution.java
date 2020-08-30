@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.twopointers.qu0844.solu;
+package com.jasper.algs.contest.weekly.c087.qu0844.solu;
 
 /**
  * 0844. 比较含退格的字符串

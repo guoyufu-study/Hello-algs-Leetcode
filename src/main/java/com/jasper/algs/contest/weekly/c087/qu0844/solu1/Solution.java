@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.twopointers.qu0844.solu1;
+package com.jasper.algs.contest.weekly.c087.qu0844.solu1;
 
 import java.util.Deque;
 import java.util.LinkedList;
