@@ -3,11 +3,11 @@ package com.jasper.algs.leetcode.maths.qu0264.solu;
 /**
  * 0264. 丑数 II
  * 
- * <p> 2刷
+ * <p> 4 刷
  */
 class Solution {
     public int nthUglyNumber(int n) {
-
+    	
     	return 0;
     }
     
