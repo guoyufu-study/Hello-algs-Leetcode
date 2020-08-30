@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.twopointers.qu1437.solu1;
+package com.jasper.algs.contest.weekly.c187.qu1437.solu1;
 
 /**
  * 1437. 是否所有 1 都至少相隔 k 个元素
