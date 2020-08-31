@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.backtracing.qu1306.solu;
+package com.jasper.algs.contest.weekly.c169.qu1306.solu;
 
 /**
  * 1306. 跳跃游戏 III

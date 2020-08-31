@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.backtracing.qu1306.solu1;
+package com.jasper.algs.contest.weekly.c169.qu1306.solu1;
 
 import java.util.LinkedList;
 import java.util.Queue;
