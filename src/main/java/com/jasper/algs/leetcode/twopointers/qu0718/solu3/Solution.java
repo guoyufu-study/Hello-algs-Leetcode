@@ -12,11 +12,13 @@ class Solution {
         
 		for (int i = 0; i < n; i++) {
 			int len = Math.min(m, n-i);
+			if(len <= ans) break;
 			ans = Math.max(ans, maxLen(A, B, i, 0, len));
 		}
 
 		for (int j = 0; j < m; j++) {
 			int len = Math.min(n, m-j);
+			if(len <= ans) break;
 			ans = Math.max(ans, maxLen(A, B, 0, j, len));
 		}
 		
