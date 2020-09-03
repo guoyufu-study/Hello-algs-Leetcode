@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.backtracing.qu1345.solu;
+package com.jasper.algs.contest.biweekly.bc19.qu1345.solu;
 
 /**
  * 1345. 跳跃游戏 IV

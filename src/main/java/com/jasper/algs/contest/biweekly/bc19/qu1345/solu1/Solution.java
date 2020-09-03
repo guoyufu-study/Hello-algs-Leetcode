@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.backtracing.qu1345.solu1;
+package com.jasper.algs.contest.biweekly.bc19.qu1345.solu1;
 
 import java.util.ArrayList;
 import java.util.HashMap;
