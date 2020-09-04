@@ -1,6 +1,6 @@
 package com.jasper.algs.leetcode.maths.qu0445.solu;
 
-import com.jasper.algs.leetcode.maths.qu0445.ListNode;
+import com.jasper.algs.leetcode.linkedlist.ListNode;
 
 /**
  * 0445.两大数相加 II（正序链表）
