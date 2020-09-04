@@ -12,7 +12,6 @@ class Solution {
     public List<List<String>> solveNQueens(int n) {
 
     	List<List<String>> ans = new ArrayList<>();
-
     	
     	return ans;
     }
