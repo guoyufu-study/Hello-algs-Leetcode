@@ -1,0 +1,26 @@
+package com.jasper.algs.leetcode.array.qu0189.solu4;
+
+/**
+ * 0189. 旋转数组
+ * 
+ * <p> 翻转
+ */
+class Solution {
+    public void rotate(int[] nums, int k) {
+        int n = nums.length;
+        reverse(nums, 0, n-1);
+        k %= n;
+        reverse(nums, 0, k-1);
+        reverse(nums, k, n-1);
+    }
+
+    void reverse(int[] nums, int left, int right) {
+        while(left < right) {
+            nums[left] = nums[left] ^ nums[right];
+            nums[right] = nums[left] ^ nums[right];
+            nums[left] = nums[left] ^ nums[right];
+            left++;
+            right--;
+        }
+    }
+}
