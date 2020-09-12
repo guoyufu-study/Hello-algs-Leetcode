@@ -13,32 +13,23 @@ import com.jasper.algs.leetcode.tree.TreeNode;
  */
 class Solution {
     public List<Double> averageOfLevels(TreeNode root) {
-
     	List<Double> ans = new LinkedList<Double>();
-    	
     	Queue<TreeNode> queue = new LinkedList<TreeNode>();
-    	queue.add(root);
+    	if(root!=null) queue.add(root);
     	while(!queue.isEmpty()) {
     		double sum = 0;
-    		int size = queue.size();
-    		
-    		for (int i = 0; i < size; i++) {
+    		int len = queue.size();
+    		for (int i = 0; i < len; i++) {
     			// 出队
     			TreeNode node = queue.poll();
-    			
     			// 入队
-    			if(node.left!=null)
-    				queue.offer(node.left);
-    			if(node.right!=null)
-    				queue.offer(node.right);
-    			
+    			if(node.left!=null) queue.offer(node.left);
+    			if(node.right!=null) queue.offer(node.right);
     			// 求和
 				sum += node.val;
 			}
-    		
     		// 求平均值
-    		ans.add(sum/size);
-    		
+    		ans.add(sum/len);
     	}
     	
     	return ans;

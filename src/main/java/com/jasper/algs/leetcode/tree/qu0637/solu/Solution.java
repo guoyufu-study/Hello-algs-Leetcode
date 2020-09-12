@@ -7,7 +7,7 @@ import com.jasper.algs.leetcode.tree.TreeNode;
 /**
  * 0637. 二叉树的层平均值
  * 
- * <p> 2刷
+ * <p> 5刷
  */
 class Solution {
     public List<Double> averageOfLevels(TreeNode root) {
