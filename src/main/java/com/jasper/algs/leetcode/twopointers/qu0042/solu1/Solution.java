@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.twopointers.qu0042.solu1;
 
 /**
- * 暴力破解
+ * 0042. 接雨水
+ * 
+ * <p>暴力枚举
  * 
  * <p>逐一计算每个柱子能接雨水的量。
  * <p> 针对每个柱子，找出其左右档板

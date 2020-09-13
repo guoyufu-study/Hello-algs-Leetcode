@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.twopointers.qu0042.solu4;
 
 /**
- * 双指针
+ * 0042. 接雨水
+ * 
+ * <p>双指针
  * <p>记录最新左右挡板、计算紧临较矮档板的柱子的接水量
  */
 class Solution {

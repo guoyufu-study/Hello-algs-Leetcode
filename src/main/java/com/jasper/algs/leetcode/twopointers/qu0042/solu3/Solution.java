@@ -3,7 +3,9 @@ package com.jasper.algs.leetcode.twopointers.qu0042.solu3;
 import java.util.Stack;
 
 /**
- * 3. 一个辅助栈
+ * 0042. 接雨水
+ * 
+ * <p> 一个辅助栈
  * 
  * <p>优化双辅助数组
  */

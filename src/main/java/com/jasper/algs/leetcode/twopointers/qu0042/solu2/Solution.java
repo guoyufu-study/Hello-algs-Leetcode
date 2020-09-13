@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.twopointers.qu0042.solu2;
 
 /**
- * 2. 两个辅助数组
+ * 0042. 接雨水
+ * 
+ * <p>两个辅助数组
  * 
  * <p> 优化暴力求解
  */
