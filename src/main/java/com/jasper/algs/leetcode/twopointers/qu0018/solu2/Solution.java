@@ -5,7 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 转成三数求和
+ * 0018. 四数之和
+ * 
+ * <p>转成三数求和
  */
 class Solution {
     public List<List<Integer>> fourSum(int[] nums, int target) {

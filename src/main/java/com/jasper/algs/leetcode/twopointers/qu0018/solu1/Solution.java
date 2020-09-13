@@ -5,7 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 暴力求解：尝试所有组合
+ * 0018. 四数之和
+ * 
+ * <p>暴力枚举
  */
 class Solution {
 	public List<List<Integer>> fourSum(int[] nums, int target) {
