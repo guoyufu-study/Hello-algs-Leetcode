@@ -7,12 +7,10 @@ package com.jasper.algs.leetcode.dp.qu0121.solu2;
  */
 class Solution {
     public int maxProfit(int[] prices) {
-    	
     	// 边界值
     	if(prices==null || prices.length==0) return 0;
     	
     	int ans = 0; // 不买卖时，收益
-    	
     	int min = prices[0];
     	for (int i = 1; i < prices.length; i++) {
 			if(prices[i]<min)

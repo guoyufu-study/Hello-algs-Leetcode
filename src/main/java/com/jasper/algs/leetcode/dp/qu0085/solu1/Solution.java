@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.dp.qu0085.solu1;
 
 /**
- * 暴力求解（简单优化）
+ * 0085. 最大矩形
+ * 
+ * <p> 暴力枚举（简单优化）
  */
 class Solution {
     public int maximalRectangle(char[][] matrix) {

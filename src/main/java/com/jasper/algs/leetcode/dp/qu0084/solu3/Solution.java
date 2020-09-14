@@ -3,7 +3,7 @@ package com.jasper.algs.leetcode.dp.qu0084.solu3;
 /**
  * 0084. 柱状图中最大的矩形
  *
- *	<p>暴力求解2：简单实现
+ *	<p>枚举高度：暴力求宽度
  */
 class Solution {
     public int largestRectangleArea(int[] heights) {

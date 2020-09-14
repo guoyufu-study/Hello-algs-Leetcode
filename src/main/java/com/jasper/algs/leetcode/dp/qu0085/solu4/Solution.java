@@ -9,7 +9,6 @@ import java.util.Arrays;
  */
 class Solution {
 	public int maximalRectangle(char[][] matrix) {
-		
 		// 边界
         if(matrix.length == 0) return 0;
         int m = matrix.length;
