@@ -5,7 +5,7 @@ import com.jasper.algs.leetcode.tree.TreeNode;
 /**
  * 0098. 验证二叉搜索树
  *
- * <p> DFS（先序）
+ * <p> DFS（前序）
  */
 class Solution {
     public boolean isValidBST(TreeNode root) {
