@@ -1,9 +1,9 @@
-package com.jasper.algs.interview.qu0404.solu;
+package com.jasper.algs.leetcode.tree.qu0110.solu;
 
 import com.jasper.algs.leetcode.tree.TreeNode;
 
 /**
- * 面试题 04.04. 检查平衡性
+ * 0110. 平衡二叉树
  * 
  * <p> 5 刷
  */

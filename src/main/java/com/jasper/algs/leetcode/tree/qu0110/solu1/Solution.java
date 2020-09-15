@@ -1,11 +1,11 @@
-package com.jasper.algs.interview.qu0404.solu1;
+package com.jasper.algs.leetcode.tree.qu0110.solu1;
 
 import com.jasper.algs.leetcode.tree.TreeNode;
 
 /**
- * 面试题 04.04. 检查平衡性
+ * 0110. 平衡二叉树
  * 
- * <p> 递归
+ * <p> DFS 前序遍历 （自顶向下）
  */
 class Solution {
     public boolean isBalanced(TreeNode root) {
