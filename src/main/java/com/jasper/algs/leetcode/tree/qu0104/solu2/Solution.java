@@ -5,13 +5,12 @@ import com.jasper.algs.leetcode.tree.TreeNode;
 /**
  * 0104. 二叉树的最大深度
  * 
- * <p> 递归
+ * <p> DFS 后序遍历
  */
 class Solution {
     public int maxDepth(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
+        if (root == null) return 0;
+        
         int leftMax = maxDepth(root.left);
         int rightMax = maxDepth(root.right);
 
