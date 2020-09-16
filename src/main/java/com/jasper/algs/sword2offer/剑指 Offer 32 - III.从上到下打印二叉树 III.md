@@ -2,7 +2,7 @@
 
 ## 剑指 Offer 32 - III. 从上到下打印二叉树 III
 
-[刷题](qu032iii/solu/Solution.java)
+与 [0103.二叉树的锯齿形层次遍历](../leetcode/tree/0103.二叉树的锯齿形层次遍历.md) 完全相同
 
 ### 问题描述
 
@@ -31,28 +31,3 @@ class Solution {
 }
 ```
 
-### 解决方案
-
-#### 1. 层序遍历 + 双端队列
-
-[层序遍历 + 双端队列](qu032iii/solu1/Solution.java)
-
-时间复杂度：\\(\mathcal{O}(N)\\)
-
-空间复杂度：\\(\mathcal{O}(N)\\)
-
-#### 2. 层序遍历 + 双端队列（奇偶层逻辑分离）
-
-[层序遍历 + 双端队列（奇偶层逻辑分离）](qu032iii/solu2/Solution.java)
-
-时间复杂度：\\(\mathcal{O}(N)\\)
-
-空间复杂度：\\(\mathcal{O}(N)\\)
-
-#### 3. 层序遍历 + 倒序
-
-[层序遍历 + 倒序](qu032iii/solu3/Solution.java)
-
-时间复杂度：\\(\mathcal{O}(N)\\)
-
-空间复杂度：\\(\mathcal{O}(N)\\)
