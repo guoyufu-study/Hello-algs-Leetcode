@@ -1,9 +1,9 @@
-package com.jasper.algs.interview.qu0408.solu1;
+package com.jasper.algs.leetcode.tree.qu0236.solu1;
 
 import com.jasper.algs.leetcode.tree.TreeNode;
 
 /**
- * 面试题 04.08. 首个共同祖先
+ * 0236. 二叉树的最近公共祖先
  * 
  * <p> 递归
  */
