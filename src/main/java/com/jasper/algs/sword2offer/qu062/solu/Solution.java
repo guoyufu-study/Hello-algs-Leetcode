@@ -1,9 +1,9 @@
-package com.jasper.algs.sword2offer.qu1660.solu;
+package com.jasper.algs.sword2offer.qu062.solu;
 
 /**
- * 1660. 面试题62. 圆圈中最后剩下的数字
+ * 剑指 Offer 62. 圆圈中最后剩下的数字
  * 
- * <p> 2刷
+ * <p> 6 刷
  */
 class Solution {
     public int lastRemaining(int n, int m) {

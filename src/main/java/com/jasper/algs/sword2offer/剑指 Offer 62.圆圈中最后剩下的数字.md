@@ -1,16 +1,14 @@
-## 1660. 面试题62. 圆圈中最后剩下的数字
-
 <script src="https://cdn.bootcss.com/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-[2刷](qu1660/solu/Solution.java)
+## 剑指 Offer 62. 圆圈中最后剩下的数字
+
+[刷题](qu062/solu/Solution.java)
 
 ### 问题描述
 
 \\(0,1, \cdots ,n-1\\) 这 \\(n\\) 个数字排成一个圆圈，从数字 \\(0\\) 开始，每次从这个圆圈里删除第 \\(m\\) 个数字。求出这个圆圈里剩下的最后一个数字。
 
-例如，0、1、2、3、4这5个数字组成一个圆圈，从数字0开始每次删除第3个数字，则删除的前4个数字依次是2、0、4、1，因此最后剩下的数字是3。
-
- 
+例如，0、1、2、3、4这5个数字组成一个圆圈，从数字`0`开始每次删除第`3`个数字，则删除的前`4`个数字依次是2、0、4、1，因此最后剩下的数字是3。
 
 示例 1：
 
@@ -56,7 +54,7 @@ class Solution {
 
 #### 1. 暴力模拟（超时）
 
-[暴力模拟](qu1660/solu1/Solution.java)
+[暴力模拟](qu062/solu1/Solution.java)
 
 #### 2. 动态规划（数学公式）
 
@@ -72,12 +70,12 @@ $$
 
 ##### 递归方案
 
-[递归方案](qu1660/solu2/Solution.java)
+[递归方案](qu062/solu2/Solution.java)
 
 
 ##### 迭代方案
 
-[迭代方案](qu1660/solu3/Solution.java)
+[迭代方案](qu062/solu3/Solution.java)
 
 时间复杂度：\\(\mathcal{O}(N)\\)
 

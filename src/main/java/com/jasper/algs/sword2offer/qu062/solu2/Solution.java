@@ -1,7 +1,7 @@
-package com.jasper.algs.sword2offer.qu1660.solu2;
+package com.jasper.algs.sword2offer.qu062.solu2;
 
 /**
- * 1660. 面试题62. 圆圈中最后剩下的数字
+ * 剑指 Offer 62. 圆圈中最后剩下的数字
  * 
  * <p> 动态规划：递归实现
  */
