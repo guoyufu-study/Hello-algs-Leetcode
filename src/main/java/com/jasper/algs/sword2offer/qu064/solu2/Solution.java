@@ -1,7 +1,9 @@
-package com.jasper.algs.sword2offer.qu1654.solu2;
+package com.jasper.algs.sword2offer.qu064.solu2;
 
 /**
- * 使用递归，使用 && 短路来终止递归
+ * 剑指 Offer 64. 求1+2+…+n
+ * 
+ * <p> 使用递归，使用 && 短路来终止递归
  */
 class Solution {
     public int sumNums(int n) {

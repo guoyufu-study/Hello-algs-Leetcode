@@ -1,4 +1,4 @@
-package com.jasper.algs.sword2offer.qu1654.solu3;
+package com.jasper.algs.sword2offer.qu064.solu3;
 
 /**
  * 1654.面试题64. 求1+2+…+n

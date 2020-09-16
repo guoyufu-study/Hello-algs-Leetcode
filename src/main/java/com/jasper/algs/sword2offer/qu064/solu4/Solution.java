@@ -1,7 +1,7 @@
-package com.jasper.algs.sword2offer.qu1654.solu4;
+package com.jasper.algs.sword2offer.qu064.solu4;
 
 /**
- * 1654.面试题64. 求1+2+…+n
+ * 剑指 Offer 64. 求1+2+…+n
  * 
  * <p> 递归 + 异常终止
  */

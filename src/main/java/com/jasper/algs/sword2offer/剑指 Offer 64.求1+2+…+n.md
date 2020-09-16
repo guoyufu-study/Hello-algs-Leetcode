@@ -1,14 +1,12 @@
 <script src="https://cdn.bootcss.com/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-## 1654. 面试题64. 求1+2+…+n
+## 剑指 Offer 64. 求1+2+…+n
 
-[2刷](qu1654/solu/Solution.java)
+[刷题](qu1654/solu/Solution.java)
 
 ### 问题描述
 
-求 \\(1+2+ \cdots +n\\) ，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
-
- 
+求 \\(1+2+ \cdots +n\\) ，要求不能使用乘除法、`for`、`while`、`if`、`else`、`switch`、`case` 等关键字及条件判断语句（`A?B:C`）。
 
 示例 1：
 
@@ -28,7 +26,7 @@
 限制：
 
 
-* \\(1 \le n \le 10000\\)
+* \\(1 \le n \le 10^4\\)
 
 
 来源：力扣（LeetCode）
@@ -88,7 +86,7 @@ public int sumNums(int n) {
 }
 ```
 
-#### 1. 位运算模拟乘法
+#### 1. 位运算模拟乘法（推荐）
 
 由等差数列求和公式可知，\\(1+2+ \cdots +n\\) 的结果等价于\\(\frac{n \cdot (n+1)}{2}\\) 。可以**通过右移1位实现除以2**，可以**通过快速乘，使用加法和位运算模拟两个数相乘** \\(n \cdot (n+1)\\) 。
 
@@ -122,7 +120,7 @@ public int sumNums(int n) {
 
 条件与 && 具有短路原则，即在第一个条件语句为 false 的情况下不会去执行第二个条件语句。利用这一特性，将递归的返回条件取非然后作为 && 的第一个条件语句，递归的主体转换为第二个条件语句，那么当递归的返回条件为 true 的情况下就不会执行递归的主体部分，递归返回。
 
-[代码实现](qu1654/solu2/Solution.java)
+[递归 + 短路运算](qu1654/solu2/Solution.java)
 
 
 #### 3. 递归 + 异常终止

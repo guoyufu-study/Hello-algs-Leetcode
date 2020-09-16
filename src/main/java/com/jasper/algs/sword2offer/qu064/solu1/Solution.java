@@ -1,16 +1,12 @@
-package com.jasper.algs.sword2offer.qu1654.solu;
+package com.jasper.algs.sword2offer.qu064.solu1;
 
-/**
- * 1654.面试题64. 求1+2+…+n
- * 
- * <p> 3刷
- */
+import java.util.stream.IntStream;
+
 class Solution {
 	
 	public int sumNums(int n) {
-		
-		
-		return 0;
+		// 不符合要求，内部使用了if、else
+		return IntStream.rangeClosed(1, n).sum();
 	}
 
 	public static void main(String[] args) {
