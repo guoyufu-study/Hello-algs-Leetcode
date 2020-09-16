@@ -1,74 +1,39 @@
 package com.jasper.algs.leetcode.dp.qu0322.solu1;
 
+import java.util.Arrays;
+
 /**
  * 0322.零钱兑换
  * 
- * <p>
- * 动态规划：自上而下
+ * <p>  枚举硬币：二维 DP
  */
 class Solution {
-
-	private int[] coins;
-	private int[] dp;
-
-	public int coinChange(int[] coins, int amount) {
-
-		// 边界
-		if (coins == null || coins.length == 0 || amount < 0)
-			return -1;
-
-		this.coins = coins;
-		dp = new int[amount + 1];
-
-		// 自上而下动态规划
-		return coinChange(amount);
-
-	}
-
-	private int coinChange(int rem) {
-		// 边界
-		if (rem < 0)
-			return -1;
-		if (rem == 0)
-			return 0;
-
-		// 使用缓存
-		if (dp[rem] != 0)
-			return dp[rem];
-
-		// 计算
-		int min = Integer.MAX_VALUE;
-		for (int coin : coins) {
-			int res = coinChange(rem - coin);
-			if (res >= 0 && res < min)
-				min = 1 + res;
+    public int coinChange(int[] coins, int amount) {
+    	int n = coins.length;
+    	int[][] dp = new int[n+1][amount+1];
+    	Arrays.fill(dp[0], Integer.MAX_VALUE);
+    	dp[0][0] = 0;
+    	for (int i = 0; i < n; i++) {// 枚举硬币
+    		for (int s = 0; s <= amount; s++) {
+    			dp[i+1][s] = dp[i][s]; // 不选
+				if(s-coins[i]>=0 && dp[i+1][s-coins[i]]!=Integer.MAX_VALUE) { // 选
+					dp[i+1][s] = Math.min(dp[i+1][s], dp[i+1][s-coins[i]]+1);
+				}
+			}
 		}
-
-		// 缓存
-		dp[rem] = (min == Integer.MAX_VALUE) ? -1 : min;
-
-		return dp[rem];
-
-	}
-
-	public static void main(String[] args) {
+    	
+    	return dp[n][amount]==Integer.MAX_VALUE ? -1 : dp[n][amount];
+    }
+    
+    public static void main(String[] args) {
 		// 3
 //    	int[] coins = new int[] {1, 2, 5};
 //		int amount = 11;
-
+		
 		// -1
-//		int[] coins = new int[] {2};
-//		int amount = 3;
-
-		// 注意边界
-		// 0
-//    	int[] coins = new int[] {1};
-//		int amount = 0;
-
-		// 20
-		int[] coins = new int[] { 186, 419, 83, 408 };
-		int amount = 6249;
-
+		int[] coins = new int[] {2};
+		int amount = 3;
+		
 		System.out.println(new Solution().coinChange(coins, amount));
 	}
 }
