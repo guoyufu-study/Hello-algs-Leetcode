@@ -1,12 +1,14 @@
 <script src="https://cdn.bootcss.com/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-## 面试题59 - II. 队列的最大值
+## 剑指 Offer 59 - II. 队列的最大值
+
+[刷题](qu059ii/solu/Solution.java)
 
 ### 问题描述
 
-请定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的**均摊时间复杂度**都是\\(\mathrm{O}(1)\\)。
+请定义一个队列并实现函数 `max_value` 得到队列里的最大值，要求函数 `max_value`、`push_back` 和 `pop_front` 的**均摊时间复杂度**都是\\(\mathrm{O}(1)\\)。
 
-若队列为空，pop_front 和 max_value 需要返回 -1
+若队列为空，`pop_front` 和 `max_value` 需要返回 `-1`
 
 示例 1：
 
@@ -70,6 +72,6 @@ class MaxQueue {
 ### 解决方案
 
 
-#### 单调不递增双端队列
+#### 单调非递增双向队列
 
-[单调不递增双端队列](q0059/ii/solu1/Solution.java)
+[单调非递增双向队列](qu059ii/solu1/Solution.java)

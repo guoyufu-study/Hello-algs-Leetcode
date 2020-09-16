@@ -1,9 +1,9 @@
-package com.jasper.algs.sword2offer.qu1649.solu;
+package com.jasper.algs.sword2offer.qu059ii.solu;
 
 /**
- * 面试题59 - II. 队列的最大值
+ * 剑指 Offer 59 - II. 队列的最大值
  *
- * <p>2刷
+ * <p>6 刷
  */
 class MaxQueue {
 

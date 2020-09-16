@@ -1,14 +1,14 @@
-package com.jasper.algs.sword2offer.qu1649.solu1;
+package com.jasper.algs.sword2offer.qu059ii.solu1;
 
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * 面试题59 - II. 队列的最大值
+ * 剑指 Offer 59 - II. 队列的最大值
  *
  * <p>
- * 单调不递增双端队列
+ * 单调非递增双向队列
  */
 class MaxQueue {
 
@@ -21,15 +21,14 @@ class MaxQueue {
 	}
 
 	public int max_value() {
-		if (data == null || data.size() == 0) {
-			return -1;
-		} else {
-			return (int) maxs.peekFirst(); // 最大值队列的队首
-		}
+		if (data == null || data.size() == 0) return -1;
+		
+		// 最大值队列的队首
+		return (int) maxs.peek(); 
 	}
 
 	public void push_back(int value) {
-		data.add(value);
+		data.offer(value);
 		// 最大值队列,是一个双端队列
 		// 思想：矮个儿后有高个儿进来，那矮个儿永无出头之日，直接踢掉即可。
 		// value 若比队尾大，删除队尾（一直重复，直到value比队尾小），value 入队
@@ -38,21 +37,19 @@ class MaxQueue {
 		while ((maxs.peekLast() != null) && (maxs.peekLast() < value)) {
 			maxs.pollLast();
 		}
-		maxs.addLast(Integer.valueOf(value));
-
+		maxs.offer(value);
 	}
 
 	public int pop_front() {
+		if (data.peek() == null)  return -1;
+		
 		// 两个队列 队首相同，就同时队首 出队
+		if ((int) data.peek() == (int) maxs.peek())
+			maxs.poll();
+		
 		// 否则，仅需 数据队列出队
-		if (data.peek() != null && maxs.peekFirst() != null) {
-			if ((int) data.peek() == (int) maxs.peekFirst()) {
-				maxs.pollFirst();
-			}
-			return data.poll();
-		}
-
-		return -1;
+		return data.poll();
+		
 	}
 }
 
