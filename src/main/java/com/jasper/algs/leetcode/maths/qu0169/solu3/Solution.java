@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.array.qu0169.solu3;
+package com.jasper.algs.leetcode.maths.qu0169.solu3;
 
 /**
  * 0169.求众数I
