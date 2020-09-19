@@ -7,27 +7,18 @@ package com.jasper.algs.contest.weekly.c097.qu0887.solu3;
  */
 class Solution {
 	public int superEggDrop(int K, int N) {
-		// 边界
-		if(K==1) return N;
-		if(N==1) return N;
-		
-		// i个鸡蛋 j 层楼
+		// 动态规划
 		int[][] dp = new int[K+1][N+1];
-		// 1个鸡蛋 j层楼
-		for (int j = 1; j <= N; j++)
-			dp[1][j] = j;
-		// i个鸡蛋 1 层楼
-		for (int i = 1; i <= K; i++)
-			dp[i][1] = 1;
+		for (int n = 1; n <= N; n++) dp[1][n] = n;//// 1个鸡蛋 n 层楼
 		
 		for (int k = 2; k <= K; k++) {
-			// prev = n-x
-			int prev = 1;
-			for (int n = 2; n <= N; n++) {
-				dp[k][n] = Math.max(dp[k][prev], dp[k-1][n-prev-1])+1;
-				if(dp[k][n]>dp[k][n-1]) {
-					prev = n-1;
+			int x = 1;
+			for (int n = 1; n <= N; n++) {
+				// 决策单调性
+				while(x<n && Math.max(dp[k-1][x-1], dp[k][n-x]) > Math.max(dp[k-1][x], dp[k][n-x-1])) {
+					x++;
 				}
+				dp[k][n] = Math.max(dp[k-1][x-1], dp[k-1][n-x])+1;
 			}
 		}
 		
