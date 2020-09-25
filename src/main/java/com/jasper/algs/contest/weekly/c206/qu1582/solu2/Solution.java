@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.weekly.c206.qu1582.solu1;
+package com.jasper.algs.contest.weekly.c206.qu1582.solu2;
 
 /**
  * 1582. 二进制矩阵中的特殊位置
