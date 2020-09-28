@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.string.qu0208;
+package com.jasper.algs.leetcode.string.qu0208.solu1;
 
 /**
  * 0208. 实现 Trie (前缀树)
@@ -30,12 +30,8 @@ class Trie {
 	
 	 private TrieNode searchPrefix(String word) {
         TrieNode node = root;
-        for (int i = 0; i < word.length(); i++) {
-           char ch = word.charAt(i);
-           node = node.get(ch);
-           if(node==null) 
-				return node;
-        }
+        for (int i = 0; i < word.length() && node!=null; i++) 
+           node = node.get(word.charAt(i));
         return node;
     }
 
@@ -62,10 +58,8 @@ class Trie {
 class TrieNode {
 
 	// 最多R个子结点
-	private TrieNode[] links;
-
 	private final int R = 26;
-
+	private TrieNode[] links;
 	private boolean isEnd;
 
 	public TrieNode() {
