@@ -2,6 +2,7 @@ package com.jasper.algs.leetcode.backtracing.qu0079.solu1;
 
 /**
  * 0079. 单词搜索
+ * 
  * <p> 回溯
  */
 class Solution {
@@ -49,30 +50,31 @@ class Solution {
 		if(start==word.length()-1)
 			return board[i][j] == word.charAt(start);
 		
-		// 成功走一步
-		if (board[i][j] == word.charAt(start)) {
-			// 标记
-            marked[i][j] = true;
-            
-            // 下一步
-            for (int k = 0; k < 4; k++) {
-            	// 新坐标
-                int newX = i + direction[k][0];
-                int newY = j + direction[k][1];
-                
-                if (inArea(newX, newY) && //未越界
-                		!marked[newX][newY] && // 未被标记
-                		dfs(board, newX, newY, marked, word, start + 1)) {
-                        return true;
-                }
-            }
-            
-            // 回溯
-            marked[i][j] = false;
-        }
-		
 		// 失败
-		return false;
+		if (board[i][j] != word.charAt(start)) return false;
+		
+		// 成功走一步
+		// 标记
+        marked[i][j] = true;
+        
+        // 下一步
+        for (int k = 0; k < 4; k++) {
+        	// 新坐标
+            int newX = i + direction[k][0];
+            int newY = j + direction[k][1];
+            
+            if (inArea(newX, newY) && //未越界
+            		!marked[newX][newY] && // 未被标记
+            		dfs(board, newX, newY, marked, word, start + 1))
+                    	return true;
+            
+        }
+        
+        // 回溯
+        marked[i][j] = false;
+        
+        return false;
+		
 	}
 
 	private boolean inArea(int x, int y) {
