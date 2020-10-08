@@ -6,23 +6,17 @@ import java.util.Map;
 /**
  * 0219. 存在重复元素 II
  * 
- * <p> 辅助字典
+ * <p> 辅助字典：散列表
  */
 class Solution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {
-
-    	// 辅助字典
-        int n = nums.length;
-        if(n==0) return false;
-        Map<Integer, Integer> helper = new HashMap<Integer, Integer>();
-        helper.put(nums[0], 0);
-        for(int i=1; i<n; i++) {
-            if(i - helper.getOrDefault(nums[i], -k) <= k) {
+    	int n = nums.length;
+        Map<Integer, Integer> map = new HashMap<>();
+		for(int index=0; index<n; index++) {
+            if(map.containsKey(nums[index]) && map.get(nums[index])+k>=index)
                 return true;
-            }
-            helper.put(nums[i], i);
+            map.put(nums[index], index);
         }
-
         return false;
     }
 }
