@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.dp.qu1420.solu;
+package com.jasper.algs.contest.weekly.c185.qu1420.solu;
 
 /**
  * 1420. 生成数组

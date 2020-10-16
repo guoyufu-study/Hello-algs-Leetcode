@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.greedy.qu1419.solu;
+package com.jasper.algs.contest.weekly.c185.qu1419.solu;
 
 /**
  * 1419. 数青蛙

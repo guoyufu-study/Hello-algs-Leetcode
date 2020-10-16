@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.greedy.qu1417.solu1;
+package com.jasper.algs.contest.weekly.c185.qu1417.solu1;
 
 /**
  * 1417. 重新格式化字符串

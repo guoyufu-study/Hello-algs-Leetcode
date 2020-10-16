@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.hashmap.qu1418.solu1;
+package com.jasper.algs.contest.weekly.c185.qu1418.solu;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * 1418. 点菜展示表
  * 
- * <p> 先构造答案结构，再统计
+ * <p> 2刷
  */
 class Solution {
     public List<List<String>> displayTable(List<List<String>> orders) {

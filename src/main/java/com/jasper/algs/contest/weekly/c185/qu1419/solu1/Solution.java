@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.greedy.qu1419.solu1;
+package com.jasper.algs.contest.weekly.c185.qu1419.solu1;
 
 import java.util.HashMap;
 import java.util.Map;
