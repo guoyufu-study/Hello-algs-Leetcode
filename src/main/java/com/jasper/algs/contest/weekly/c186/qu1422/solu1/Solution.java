@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.dp.qu1422.solu1;
+package com.jasper.algs.contest.weekly.c186.qu1422.solu1;
 
 /**
  * 1422. 分割字符串的最大得分

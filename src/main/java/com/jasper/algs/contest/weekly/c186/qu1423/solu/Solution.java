@@ -1,39 +1,15 @@
-package com.jasper.algs.leetcode.dp.qu1423.solu1;
+package com.jasper.algs.contest.weekly.c186.qu1423.solu;
 
 /**
  * 1423. 可获得的最大点数
  * 
- * <p>动态规划
+ * <p> 6 刷
  */
 class Solution {
     public int maxScore(int[] cardPoints, int k) {
     	
-    	int N = cardPoints.length;
-    	
-    	// 从尾部取卡牌，求和
-    	int[] helper = new int[k+1];
-    	helper[k] = 0;
-    	for (int i=N-1, j=k-1; j>=0; i--,j--) {
-			helper[j] = helper[j+1] + cardPoints[i];
-		}
-    	
-    	
-    	int sum = 0;
-    	for (int i=0, j=1; j<k+1; i++,j++) {
-    		// 从头部取卡牌，求和
-    		sum += cardPoints[i];
-    		// 求总和
-			helper[j] += sum;
-		}
-    	
-    	// 取最大和
-    	int ans = 0;
-    	for (int i = 0; i <= k; i++) {
-			ans = Math.max(ans, helper[i]);
-		}
-    	return ans;
+    	return 0;
     }
-    
     
     public static void main(String[] args) {
     	//202
