@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.dp.qu0829.solu2;
+package com.jasper.algs.contest.weekly.c083.qu0829.solu2;
 
 /**
  * 0829. 连续整数求和

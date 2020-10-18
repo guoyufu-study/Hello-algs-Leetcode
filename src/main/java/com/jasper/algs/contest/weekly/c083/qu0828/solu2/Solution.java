@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.dp.qu0828.solu2;
+package com.jasper.algs.contest.weekly.c083.qu0828.solu2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 0828. 统计子串中的唯一字符
  * 
- * <p> 动态规划：字母分别计数
+ * <p> 字母分别计数：辅助数组
  */
 class Solution {
     public int uniqueLetterString(String s) {
