@@ -11,12 +11,8 @@ public class Solution {
 		// 确保m<=n
 		int m = nums1.length, n = nums2.length;
 		if(m>n) {
-			int[] tmp = nums1;
-			nums1 = nums2;
-			nums2 = tmp;
+			return findMedianSortedArrays(nums2, nums1);
 		}
-		m = nums1.length;
-		n = nums2.length;
 		
 		// 确定 i 和 j
 		int left=0, right=m, // 注意 right 不是 m-1

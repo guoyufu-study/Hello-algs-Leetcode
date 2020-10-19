@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 一遍哈希表：找不到再存
+ * 0001.两数之和
+ * 
+ * <p>一遍哈希表：找不到再存
  */
 public class Solution {
 

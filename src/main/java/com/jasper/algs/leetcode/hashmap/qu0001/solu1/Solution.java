@@ -1,7 +1,9 @@
 package com.jasper.algs.leetcode.hashmap.qu0001.solu1;
 
 /**
- * 暴力求解：尝试每一种组合
+ * 0001.两数之和
+ * 
+ * <p>暴力枚举：尝试每一种组合
  */
 public class Solution {
 
