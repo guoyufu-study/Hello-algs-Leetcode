@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.hashmap.qu1189.solu1;
+package com.jasper.algs.contest.weekly.c154.qu1189.solu1;
 
 /**
  * 1189. “气球” 的最大数量
