@@ -10,18 +10,18 @@ import com.jasper.algs.leetcode.tree.TreeNode;
 class Solution {
 	int ans = 0;
     public int diameterOfBinaryTree(TreeNode root) {
-    	dfs(root);
+    	lrd(root);
     	return ans;
     }
 	
     /**
      * 返回树的深度
      */
-    int dfs(TreeNode root) {
+    int lrd(TreeNode root) {
     	if(root==null) return 0;
     	
-    	int L = dfs(root.left);
-    	int R = dfs(root.right);
+    	int L = lrd(root.left);
+    	int R = lrd(root.right);
     	
     	ans = Math.max(ans, L+R);
     	
