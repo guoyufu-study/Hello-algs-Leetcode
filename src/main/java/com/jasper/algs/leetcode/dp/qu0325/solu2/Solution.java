@@ -1,5 +1,6 @@
 package com.jasper.algs.leetcode.dp.qu0325.solu2;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +11,7 @@ import java.util.Map;
  */
 class Solution {
     public int maxSubArrayLen(int[] nums, int k) {
-    	
+    	Arrays.asList(1,2);
     	Map<Integer, Integer> dp = new HashMap<Integer, Integer>();
     	dp.put(0, -1);
     	int sum = 0, ans = 0, n = nums.length;
