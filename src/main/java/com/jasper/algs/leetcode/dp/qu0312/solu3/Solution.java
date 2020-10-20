@@ -7,31 +7,23 @@ package com.jasper.algs.leetcode.dp.qu0312.solu3;
  */
 class Solution {
     public int maxCoins(int[] nums) {
-    	int N = nums.length;
-    	// 边界
-		if(N==0)
-    		return 0;
+    	int n = nums.length;
     	
     	// 虚拟边界
-    	int[] nums2 = new int[N+2];
-    	System.arraycopy(nums, 0, nums2, 1, N);
-    	nums2[0] = 1;
-    	nums2[N+1] = 1;
+    	int[] nums2 = new int[n+2];
+    	System.arraycopy(nums, 0, nums2, 1, n);
+    	nums2[0] = nums2[n+1] = 1;
+    	nums = nums2;
     	
-    	// 辅助数组
-    	int[][] helper = new int[N+2][N+2];
-    	
-    	for (int i = N-1; i >= 0; i--) {
-			for (int j = i+2; j < N+2; j++) {
-				int max = 0;
-				for (int k = i+1; k < j; k++) {
-					int tmp = helper[i][k]+helper[k][j]+nums2[i]*nums2[k]*nums2[j];
-					if(tmp>max) max = tmp;
-				}
-				helper[i][j] = max;
+    	// 动态规划
+    	int[][] dp = new int[n+2][n+2];
+    	for (int s = n-1; s >= 0; s--) {
+			for (int e = s+2; e < n+2; e++) {
+				for (int i = s+1; i < e; i++) 
+					dp[s][e] = Math.max(dp[s][e], dp[s][i]+dp[i][e]+nums[s]*nums[i]*nums[e]);
 			}
 		}
     	
-    	return helper[0][N+1];
+    	return dp[0][n+1];
     }
 }

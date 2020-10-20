@@ -1,56 +1,45 @@
 package com.jasper.algs.leetcode.dp.qu0312.solu2;
 
+import java.util.Arrays;
+
 /**
  * 0312.戳气球
  * <p>
- * 分治法
+ * 记忆化搜索
  */
 class Solution {
     public int maxCoins(int[] nums) {
-    	int N = nums.length;
-    	// 边界
-		if(N==0)
-    		return 0;
+    	int n = nums.length;
     	
     	// 虚拟边界
-    	int[] nums2 = new int[N+2];
-    	System.arraycopy(nums, 0, nums2, 1, N);
+    	int[] nums2 = new int[n+2];
+    	System.arraycopy(nums, 0, nums2, 1, n);
     	nums2[0] = 1;
-    	nums2[N+1] = 1;
+    	nums2[n+1] = 1;
     	
     	// 辅助数组
-    	int[][] helper = new int[N+2][N+2];
+    	int[][] memo = new int[n+2][n+2];
+    	for(int[] a : memo) Arrays.fill(a, -1);
     	
     	// 戳气球
-    	int ans = maxCoins(nums2, 0, N+1, helper);
-    	
-    	return ans;
+    	return maxCoins(nums2, 0, n+1, memo);
     }
     
     
-    private int maxCoins(int[] nums, int left, int right, int[][] helper) {
-    	// 回归条件
-    	if(left==right-1)
-    		return 0;
+    private int maxCoins(int[] nums, int s, int e, int[][] memo) {
+    	// 查缓存、回归条件
+    	if(memo[s][e] >= 0) return memo[s][e];
     	
-    	// 查缓存
-    	if(helper[left][right] != 0)
-    		return helper[left][right];
-    		
-    	// 分治。k为最后一个被戳破的气球
-    	int maxCoins = 0;
-    	for (int k = left+1; k < right; k++) {
-			int tmp = maxCoins(nums, left, k, helper)
-					+ maxCoins(nums, k, right, helper)
-					+ nums[left]*nums[k]*nums[right];
-			
-			if(tmp>maxCoins) maxCoins = tmp;
-		}
+    	if(s+1==e) memo[s][e] = 0;
+    	else 
+	    	// 分治。k为最后一个被戳破的气球
+	    	for (int k = s+1; k < e; k++) 
+	    		// 计算并缓存
+	    		memo[s][e] = Math.max(memo[s][e], maxCoins(nums, s, k, memo)
+						+ maxCoins(nums, k, e, memo)
+						+ nums[s]*nums[k]*nums[e]);
     	
-    	// 缓存
-    	helper[left][right] = maxCoins;
-    	
-    	return maxCoins;
+    	return memo[s][e];
     }
     
     public static void main(String[] args) {
