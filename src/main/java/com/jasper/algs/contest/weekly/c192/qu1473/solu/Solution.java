@@ -1,4 +1,4 @@
-package com.jasper.algs.contest.weekly.c192.qu5431.solu;
+package com.jasper.algs.contest.weekly.c192.qu1473.solu;
 
 /**
  * 1473. 给房子涂色 III

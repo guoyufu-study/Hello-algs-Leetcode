@@ -1,4 +1,6 @@
-package com.jasper.algs.contest.weekly.c192.qu5431.solu1;
+package com.jasper.algs.contest.weekly.c192.qu1473.solu1;
+
+import java.util.Arrays;
 
 /**
  * 5431. 给房子涂色 III
@@ -14,13 +16,9 @@ class Solution {
 		
 		// 初始化
 		final int INF = 1_000_001; // 表示无方案
-		for (int i = 0; i < m; i++) {
-			for (int j = 0; j < target + 1; j++) {
-				for (int k = 0; k < n + 1; k++) {
-					dp[i][j][k] = INF;
-				}
-			}
-		}
+		for (int i = 0; i < m; i++) 
+			for (int j = 0; j < target + 1; j++) 
+				Arrays.fill(dp[i][j], INF);
 
 		// 初始化第0个房子
 		if (houses[0] > 0) // 第0个房子已经涂色
