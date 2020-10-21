@@ -1,8 +1,10 @@
-package com.jasper.algs.leetcode.maths.qu1323.solu1;
+package com.jasper.algs.contest.weekly.c172.qu1323.solu1;
 
 
 /**
- * 找到最高位6
+ * 1323. 6 和 9 组成的最大数字
+ * 
+ * <p>找到最高位6
  */
 class Solution {
     public int maximum69Number (int num) {

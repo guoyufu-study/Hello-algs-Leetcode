@@ -1,9 +1,9 @@
-package com.jasper.algs.leetcode.greedy.qu1326.solu;
+package com.jasper.algs.contest.weekly.c172.qu1326.solu;
 
 /**
  * 1326. 灌溉花园的最少水龙头数目
  * 
- * <p> 2刷
+ * <p> 6刷
  */
 class Solution {
     public int minTaps(int n, int[] ranges) {

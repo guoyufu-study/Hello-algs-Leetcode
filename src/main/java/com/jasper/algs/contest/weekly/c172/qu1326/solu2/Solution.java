@@ -1,38 +1,42 @@
-package com.jasper.algs.leetcode.greedy.qu1326.solu1;
-
-import java.util.Arrays;
+package com.jasper.algs.contest.weekly.c172.qu1326.solu2;
 
 /**
  * 1326. 灌溉花园的最少水龙头数目
  * 
- * <p>动态规划
+ * <p> 贪心算法
  */
 class Solution {
     public int minTaps(int n, int[] ranges) {
     	
-    	// 索引：右边界  -> 值：左边界
-    	int[] prev = new int[n+1];
-    	for (int i = 0; i <= n; i++) prev[i] = i;
+    	// 能到达的最远位置
+    	int[] next = new int[n+1];
+    	for (int i = 0; i <= n; i++) next[i] = i;
     	for (int i = 0; i <= n; i++) {
-    		// 约束区间范围 [0,n]
 			int l = Math.max(0, i-ranges[i]);
 			int r = Math.min(n, i+ranges[i]);
-			// 将区间左边界 绑定到 右边界
-			prev[r] = Math.min(prev[r], l);
+			next[l] = Math.max(next[l], r);
 		}
     	
-    	// 动态规划
-    	int[] dp = new int[n+1];
-    	Arrays.fill(dp, Integer.MAX_VALUE);
-    	dp[0] = 0;
-    	for (int i = 1; i <= n; i++) {
-			for (int j = prev[i]; j < i; j++) {// [prev[i], i-1]
-				if(dp[j]!=Integer.MAX_VALUE) // 排除无效值
-					dp[i] = Math.min(dp[j]+1, dp[i]);
-			}
-		}
+    	int ans = 1;
+    	int index = 0;
+    	int right = next[0];
+    	while (index <= n) {
+    		// 无法到达
+    		if(index > right) return -1; 
+    		
+    		// 最右边界能到终点
+    		if(right==n) break;
+    		
+    		// 添加一个水龙头
+    		ans++;
+    		// 新水龙头最右边界
+    		int most = right;
+    		while(index<=right)
+    			most = Math.max(most, next[index++]);
+    		right = most;
+    	}
     	
-    	return (dp[n]==Integer.MAX_VALUE? -1 : dp[n]);
+        return ans;
     }
     
     public static void main(String[] args) {
