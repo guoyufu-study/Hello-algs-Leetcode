@@ -1,5 +1,10 @@
 package com.jasper.algs.leetcode.maths.qu0029.solu1;
 
+/**
+ * 0029.两整数相除
+ * 
+ * <p> 泰勒展式
+ */
 class Solution {
     public int divide(int dividend, int divisor) {
     	// 处理溢出情况

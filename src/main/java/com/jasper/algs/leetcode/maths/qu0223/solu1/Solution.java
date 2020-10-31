@@ -1,4 +1,4 @@
-package com.jasper.algs.leetcode.maths.qu0223;
+package com.jasper.algs.leetcode.maths.qu0223.solu1;
 
 /**
  * 0223. 矩形面积
