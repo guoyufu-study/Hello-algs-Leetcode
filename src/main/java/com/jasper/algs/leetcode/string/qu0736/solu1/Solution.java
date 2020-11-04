@@ -23,9 +23,9 @@ class Solution {
 
     int evaluate_inner(String expression) {
         if(expression.charAt(0)!='(') {
-            if (Character.isDigit(expression.charAt(0)) || expression.charAt(0) == '-') // 常量值
+            if (Character.isDigit(expression.charAt(0)) || expression.charAt(0) == '-') // 数字常量
                 return Integer.parseInt(expression);
-            for (int i = scope.size() - 1; i >= 0; --i) { // 变量
+            for (int i = scope.size() - 1; i >= 0; --i) { // 变量标识符
                 if (scope.get(i).containsKey(expression))
                     return scope.get(i).get(expression);
             }
@@ -34,6 +34,7 @@ class Solution {
         // 清除最外层括号
         List<String> tokens = parse(expression.substring(
                 expression.charAt(1) == 'm' ? 6 : 5, expression.length() - 1));
+        
         if(expression.startsWith("add", 1)) // 加
             return evaluate(tokens.get(0)) + evaluate(tokens.get(1));
         
@@ -43,7 +44,6 @@ class Solution {
         for(int i=1; i<tokens.size(); i+=2) // 赋值+运算
             scope.get(scope.size()-1).put(tokens.get(i-1), evaluate(tokens.get(i)));
         return evaluate(tokens.get(tokens.size()-1));
-
     }
 
     List<String> parse(String expression) {
